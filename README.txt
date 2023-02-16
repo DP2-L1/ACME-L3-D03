@@ -1,4 +1,4 @@
-#ACME L3
+ACME L3
 
 # README.txt
 #
@@ -21,5 +21,5 @@ following resources:
 
 - **/fragments/**
 
-#ACME L3
+
  

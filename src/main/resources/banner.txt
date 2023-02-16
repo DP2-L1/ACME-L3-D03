@@ -1,0 +1,23 @@
+
+       _         ____   ___       _____________       ____
+      dM.       6MMMMb/ `MMb     dMM'`MMMMMMMMM       `MM'
+     ,MMb      8P    YM  MMM.   ,PMM  MM      \        MM
+     d'YM.    6M      Y  M`Mb   d'MM  MM               MM        ____
+    ,P `Mb    MM         M YM. ,P MM  MM    ,          MM       6MMMMb
+    d'  YM.   MM         M `Mb d' MM  MMMMMMM          MM      MM'  `Mb
+   ,P   `Mb   MM         M  YM.P  MM  MM    `          MM            MM
+   d'    YM.  MM         M  `Mb'  MM  MM               MM           .M9
+  ,MMMMMMMMb  YM      6  M   YP   MM  MM               MM        MMMM
+  d'      YM.  8b    d9  M   `'   MM  MM      /        MM    /      `Mb
+_dM_     _dMM_  YMMMM9  _M_      _MM__MMMMMMMMM       _MMMMMMM       MM
+                                                                     MM
+                                                               MM.  ,M9
+                                                                YMMMM9
+
+
+                    
+
+Application:          Acme-L3
+Application endpoint: http://localhost:${server.port}${server.servlet.contextPath}
+Database endpoint:    ${spring.datasource.url}
+Powered by:           Spring Boot ${spring-boot.version}, ${acme.framework.display-name} ${acme.framework.version}

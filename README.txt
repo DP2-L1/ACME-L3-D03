@@ -1,7 +1,5 @@
 ACME L3
 
-https://github.com/DP2-L1/ACME-L3-D01/blob/master/src/main/webapp/META-INF/resources/images/banner.png
-
 # README.txt
 #
 # Copyright (C) 2012-2023 Rafael Corchuelo.

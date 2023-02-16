@@ -20,6 +20,7 @@
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="77940667:Vacaro Goytia, Gabriel" action="https://hackertyper.net/"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link-3" action="https://www.youtube.com/watch?v=GgWsADYJdpM&list=PLkPEGG1vZdQ0wCgSKvd6OHbuQS76GbV0N&index=13"/>
 <<<<<<< HEAD
 			<acme:menu-suboption code="45339031M:Warleta Murcia, Ignacio" action="https://www.tiktok.com/@edwardadiel/video/7144003248792456494?lang=es"/>
 =======

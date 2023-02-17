@@ -23,6 +23,7 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-2" action="https://hackertyper.net/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-3" action="https://www.youtube.com/watch?v=GgWsADYJdpM&list=PLkPEGG1vZdQ0wCgSKvd6OHbuQS76GbV0N&index=13"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-4" action="https://www.youtube.com/watch?v=JgJjypXMn9Y"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link-5" action="https://www.youtube.com/watch?v=l5ixt5EuZok&t=10s"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

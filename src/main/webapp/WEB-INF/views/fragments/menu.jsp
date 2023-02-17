@@ -19,8 +19,8 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link-1" action="https://hackertyper.net/"/>
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link-2" action="https://www.tiktok.com/@edwardadiel/video/7144003248792456494?lang=es"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link-1" action="https://www.tiktok.com/@edwardadiel/video/7144003248792456494?lang=es"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link-2" action="https://hackertyper.net/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-3" action="https://www.youtube.com/watch?v=GgWsADYJdpM&list=PLkPEGG1vZdQ0wCgSKvd6OHbuQS76GbV0N&index=13"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-4" action="https://www.youtube.com/watch?v=JgJjypXMn9Y"/>
 		</acme:menu-option>

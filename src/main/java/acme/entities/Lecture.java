@@ -30,7 +30,7 @@ public class Lecture {
 	@Length(max = 101)
 	private String	body;
 
-	private Boolean	theorical;
+	private Boolean	indicator;
 
 	private String	link;
 

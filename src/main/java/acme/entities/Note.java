@@ -30,6 +30,7 @@ public class Note {
 	@Length(max = 100)
 	private String	message;
 
+	//Propiedad derivada
 	@NotBlank
 	@Length(max = 75)
 	private String	author;

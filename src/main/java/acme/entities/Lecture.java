@@ -6,6 +6,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Positive;
 
 import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -16,22 +17,23 @@ import lombok.Setter;
 public class Lecture {
 
 	@NotBlank
-	@Length(max = 76)
+	@Length(max = 75)
 	private String	title;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	private String	abstracto;
 
 	@Positive
 	private Integer	estimatedLearningTime;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	private String	body;
 
 	private Boolean	indicator;
 
+	@URL
 	private String	link;
 
 }

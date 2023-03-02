@@ -8,6 +8,7 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.PositiveOrZero;
 
 import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -23,11 +24,11 @@ public class Course {
 	private String	code;
 
 	@NotBlank
-	@Length(max = 76)
+	@Length(max = 75)
 	private String	title;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	private String	abstracto;
 
 	private Boolean	indicator;
@@ -35,5 +36,6 @@ public class Course {
 	@PositiveOrZero
 	private Double	retailPrice;
 
+	@URL
 	private String	link;
 }

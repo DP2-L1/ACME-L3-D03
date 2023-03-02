@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -15,17 +16,18 @@ import lombok.Setter;
 public class Lecturer {
 
 	@NotBlank
-	@Length(max = 76)
+	@Length(max = 75)
 	private String	almaMater;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	private String	resume;
 
 	@NotBlank
-	@Length(max = 101)
+	@Length(max = 100)
 	private String	qualifications;
 
+	@URL
 	private String	link;
 
 }

@@ -1,9 +1,12 @@
 
 package acme.entities;
 
+import java.sql.Date;
+
 import javax.persistence.Entity;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
@@ -14,7 +17,18 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Note extends Message {
+public class Note {
+
+	@Past
+	private Date	instationMoment;
+
+	@NotBlank
+	@Length(max = 75)
+	private String	title;
+
+	@NotBlank
+	@Length(max = 100)
+	private String	message;
 
 	@NotBlank
 	@Length(max = 75)

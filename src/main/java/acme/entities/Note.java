@@ -20,25 +20,25 @@ import lombok.Setter;
 public class Note {
 
 	@Past
-	private Date	instationMoment;
+	private Date instationMoment;
 
 	@NotBlank
 	@Length(max = 75)
-	private String	title;
+	private String title;
 
 	@NotBlank
 	@Length(max = 100)
-	private String	message;
+	private String message;
 
-	//Propiedad derivada
+	// Propiedad derivada
 	@NotBlank
 	@Length(max = 75)
-	private String	author;
+	private String author;
 
 	@Email
-	private String	email;
+	private String email;
 
 	@URL
-	private String	link;
+	private String link;
 
 }

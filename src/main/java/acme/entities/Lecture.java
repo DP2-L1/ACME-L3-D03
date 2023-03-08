@@ -2,6 +2,7 @@
 package acme.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Positive;
 
@@ -18,22 +19,25 @@ public class Lecture {
 
 	@NotBlank
 	@Length(max = 75)
-	private String	title;
+	protected String	title;
 
 	@NotBlank
 	@Length(max = 100)
-	private String	abstracto;
+	protected String	abstracto;
 
 	@Positive
-	private Integer	estimatedLearningTime;
+	protected Integer	estimatedLearningTime;
 
 	@NotBlank
 	@Length(max = 100)
-	private String	body;
+	protected String	body;
 
-	private Boolean	indicator;
+	protected Boolean	indicator;
 
 	@URL
-	private String	link;
+	protected String	link;
+
+	@ManyToOne
+	protected Lessons	Lesson;
 
 }

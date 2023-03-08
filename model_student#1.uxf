@@ -82,7 +82,7 @@ Lecture
 + title: String {NotBlank, Legth(max=75)}
 + abstract: String {NotBlank, Legth(max=100)}
 + estimated_learning_time: Integer {Hours, PositiveOrZero}
-+ Indicator: Enumerate
++ Indicator: Indicator
 + link: String {URL, Optional}
 
 bg=GREEN</panel_attributes>
@@ -96,7 +96,7 @@ bg=GREEN</panel_attributes>
       <w>105</w>
       <h>49</h>
     </coordinates>
-    <panel_attributes>Enumerate
+    <panel_attributes>Indicator
 --
 theory
 hands-on
@@ -126,8 +126,8 @@ m1=1</panel_attributes>
       <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;-x
-m2=1
-m1=1..*</panel_attributes>
+m2=1..*
+m1=1</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
@@ -135,10 +135,15 @@ m1=1..*</panel_attributes>
     <coordinates>
       <x>189</x>
       <y>168</y>
-      <w>35</w>
+      <w>56</w>
       <h>63</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;-x
+imparte
+
+
+
+m1=1
 m2=1..*</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>

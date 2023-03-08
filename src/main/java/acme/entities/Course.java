@@ -1,8 +1,12 @@
 
 package acme.entities;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.PositiveOrZero;
@@ -10,6 +14,9 @@ import javax.validation.constraints.PositiveOrZero;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.entities.enums.Indicator;
+import acme.framework.components.datatypes.Money;
+import acme.roles.Lecturer;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,21 +28,27 @@ public class Course {
 	@NotBlank
 	@Column(unique = true)
 	@Pattern(regexp = "^[a-z]{1,3}+[0,9]{3}$", message = "code must follow pattern")
-	private String	code;
+	protected String		code;
 
 	@NotBlank
 	@Length(max = 75)
-	private String	title;
+	protected String		title;
 
 	@NotBlank
 	@Length(max = 100)
-	private String	abstracto;
+	protected String		abstracto;
 
-	private Boolean	indicator;
+	protected Indicator		indicator;
 
 	@PositiveOrZero
-	private Double	retailPrice;
+	protected Money			retailPrice;
 
 	@URL
-	private String	link;
+	protected String		link;
+
+	@OneToMany
+	protected List<Lecture>	lecture;
+
+	@ManyToOne
+	protected Lecturer		lecturer;
 }

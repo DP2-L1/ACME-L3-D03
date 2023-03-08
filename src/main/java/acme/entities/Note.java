@@ -4,11 +4,13 @@ package acme.entities;
 import java.sql.Date;
 
 import javax.persistence.Entity;
+import javax.validation.Valid;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
+import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -18,20 +20,23 @@ import lombok.Setter;
 @Entity
 public class Note {
 
-	private Date	instation_moment;
+	protected Date		instation_moment;
 
 	@NotBlank
 	@Length(max = 75)
-	private String	title;
+	protected String	title;
 
 	@NotBlank
 	@Length(max = 100)
-	private String	message;
+	protected String	message;
 
 	@Email
-	private String	email;
+	protected String	email;
 
 	@URL
-	private String	link;
+	protected String	link;
+
+	@Valid
+	protected User		author;
 
 }

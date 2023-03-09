@@ -5,18 +5,13 @@ import javax.persistence.Entity;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotBlank;
 
-import acme.framework.data.AbstractRole;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Student extends AbstractRole {
-
-	// Serialisation identifier -----------------------------------------------
-
-	private static final long serialVersionUID = 1L;
+public class Student {
 
 	// Atributes
 

@@ -48,4 +48,11 @@ public class Enrolment extends AbstractEntity {
 	@ManyToOne(optional = false)
 	protected Student student;
 
+	/*
+	 * @Valid
+	 * 
+	 * @NotNull
+	 * 
+	 * @ManyToOne(optional = false) protected Course course;
+	 */
 }

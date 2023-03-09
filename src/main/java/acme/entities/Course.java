@@ -27,7 +27,7 @@ public class Course {
 
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "^[a-z]{1,3}+[0,9]{3}$", message = "code must follow pattern")
+	@Pattern(regexp = "[A-Z]{1,3}[0,9]{3}", message = "code must follow pattern")
 	protected String		code;
 
 	@NotBlank

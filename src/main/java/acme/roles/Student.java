@@ -2,8 +2,10 @@
 package acme.roles;
 
 import javax.persistence.Entity;
-import javax.validation.constraints.Max;
 import javax.validation.constraints.NotBlank;
+
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -16,17 +18,18 @@ public class Student {
 	// Atributes
 
 	@NotBlank
-	@Max(value = 76)
+	@Length(max = 75)
 	protected String statement;
 
 	@NotBlank
-	@Max(value = 101)
-	protected String listStrongFeatures;
+	@Length(max = 100)
+	protected String StrongFeatures;
 
 	@NotBlank
-	@Max(value = 101)
-	protected String listWeakFeatures;
+	@Length(max = 100)
+	protected String WeakFeatures;
 
+	@URL
 	protected String link;
 
 	// Derived attributes -----------------------------------------------------

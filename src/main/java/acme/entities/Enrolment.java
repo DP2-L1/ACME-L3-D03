@@ -2,12 +2,17 @@ package acme.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-import javax.validation.constraints.PositiveOrZero;
 import javax.validation.constraints.Size;
 
 import acme.framework.data.AbstractEntity;
+import acme.roles.Student;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -34,7 +39,13 @@ public class Enrolment extends AbstractEntity {
 	@Size(max = 100)
 	protected String goals;
 
-	@PositiveOrZero
+	@NotNull
+	@Temporal(TemporalType.TIME)
 	protected int workTimeInHours;
+
+	@Valid
+	@NotNull
+	@ManyToOne(optional = false)
+	protected Student student;
 
 }

@@ -1,2 +1,4 @@
 "",,
 currency-01,EUR,"EUR, USD, GBP",,
+key,defaultCurrency,acceptedCurrencies,,
+"",,,,

@@ -18,7 +18,6 @@ public class Configuration extends AbstractEntity {
 	protected String			defaultCurrency;
 
 	@NotBlank
-	@Pattern(regexp = "[A-Z]{3}")
 	protected String			acceptedCurrencies;
 
 }

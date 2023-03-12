@@ -1,11 +1,12 @@
 
-package acme.entities;
+package acme.entities.Tutorial;
 
 import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -47,7 +48,7 @@ public class Session extends AbstractEntity {
 
 	private String				link;
 
-	//	@ManyToOne
-	//	private Tutorial			tutorial;
+	@ManyToOne
+	private Tutorial			tutorial;
 
 }

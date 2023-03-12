@@ -1,8 +1,12 @@
 
-package acme.entities;
+package acme.entities.Tutorial;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -39,7 +43,7 @@ public class Tutorial extends AbstractEntity {
 	@NotNull
 	private Integer				estimatedTotalTime;
 
-	//	@OneToMany(mappedBy = "tutorial")
-	//	private List<Session>		sessions			= new ArrayList<>();
+	@OneToMany(mappedBy = "tutorial")
+	private List<Session>		session				= new ArrayList<>();
 
 }

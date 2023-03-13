@@ -41,10 +41,11 @@ public class Enrolment extends AbstractEntity {
 
 	@NotNull
 	@Temporal(TemporalType.TIME)
-	protected int workTimeInHours;
+	protected Integer workTimeInHours;
 
 	@Valid
 	@NotNull
+
 	@ManyToOne(optional = false)
 	protected Student student;
 

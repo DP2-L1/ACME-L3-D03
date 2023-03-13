@@ -39,7 +39,7 @@ public class workbook extends AbstractEntity {
 
 	@NotNull
 	@Temporal(TemporalType.DATE)
-	protected Date fecha;
+	protected Date timePeriod;
 
 	@URL
 	protected String link;

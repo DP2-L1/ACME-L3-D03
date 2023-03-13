@@ -23,11 +23,11 @@ public class Student {
 
 	@NotBlank
 	@Length(max = 100)
-	protected String StrongFeatures;
+	protected String strongFeatures;
 
 	@NotBlank
 	@Length(max = 100)
-	protected String WeakFeatures;
+	protected String weakFeatures;
 
 	@URL
 	protected String link;

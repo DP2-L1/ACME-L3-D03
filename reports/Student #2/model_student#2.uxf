@@ -134,7 +134,7 @@ bg=GREEN</panel_attributes>
       <w>25</w>
       <h>75</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-x
+    <panel_attributes>lt=&lt;-&gt;
 m2=1..*
 m1=1
 </panel_attributes>
@@ -148,7 +148,7 @@ m1=1
       <w>100</w>
       <h>25</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-x
+    <panel_attributes>lt=&lt;-&gt;
 m2=1..*
 m1=1
 </panel_attributes>

@@ -1,13 +1,10 @@
 
 package acme.entities.Tutorial;
 
-import java.time.LocalDateTime;
-
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
-import javax.validation.constraints.Future;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -36,10 +33,6 @@ public class Session extends AbstractEntity {
 	@Enumerated(EnumType.STRING)
 	@NotNull
 	private SessionType			sessionType;
-
-	@Future
-	@NotNull
-	private LocalDateTime		startTime;
 
 	@NotNull
 	@Min(value = 1)

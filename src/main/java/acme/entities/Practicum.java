@@ -35,14 +35,14 @@ public class Practicum extends AbstractEntity {
 
 	@NotBlank
 	@Length(min = 0, max = 101)
-	protected String	practicum_abstract;
+	protected String	practicumAbstract;
 
 	@NotBlank
 	@Length(min = 0, max = 101)
 	protected String	goals;
 
 	@Temporal(value = TemporalType.TIME)
-	protected Date		estimated_time;
+	protected Date		estimatedTime;
 
 	@ManyToOne()
 	@Valid

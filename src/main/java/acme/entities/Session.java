@@ -28,13 +28,13 @@ public class Session extends AbstractEntity {
 
 	@NotBlank
 	@Length(min = 0, max = 101)
-	protected String	session_abstract;
+	protected String	sessionAbstract;
 
 	@Temporal(value = TemporalType.TIME)
 	@FutureOrPresent
-	protected Date		time_period;
+	protected Date		timePeriod;
 
-	protected String	optional_link;
+	protected String	optionalLink;
 
 	@ManyToOne()
 	@Valid

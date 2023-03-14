@@ -6,35 +6,35 @@
     <coordinates>
       <x>720</x>
       <y>100</y>
-      <w>210</w>
-      <h>130</h>
+      <w>330</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Session
 --
--Title: String
--Abstract: String
--Session_type: String
+-Title: String {NotBlank, Length(76)}
+-Abstract: String {NotBlank, Length(101)}
+-Session_type: SessionType 
 -Duration: Integer
--Link: String
+-Link: String {URL}
 bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>290</x>
-      <y>100</y>
-      <w>210</w>
-      <h>130</h>
+      <x>80</x>
+      <y>90</y>
+      <w>420</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Tutorial 
 --
--Code: String
--Title: String
--Abstract: String
--Goals: String
+-Code: String {Unique, NotBlank, Pattern([A-Z]{1,3}[0-9][0-9]{3})}
+-Title: String {NotBlank, Length(76)}
+-Abstract: String {NotBlank, Length(101)}
+-Goals: String {NotBlank, Length(101)}
 -EstimatedTotalTime: Integer
 bg=GREEN</panel_attributes>
     <additional_attributes/>
@@ -42,20 +42,86 @@ bg=GREEN</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>290</x>
-      <y>330</y>
-      <w>210</w>
-      <h>130</h>
+      <x>140</x>
+      <y>350</y>
+      <w>290</w>
+      <h>110</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
 Assistant
 --
--Code: String
--Title: String
--Abstract: String
--Goals: String
--EstimatedTotalTime: Integer
+-Supervisor: String {NotBlank, Length(76)}
+-Expertise: String {NotBlank, Length(101)}
+-Resume: String {NotBlank, Length(101)}
+-Link: String {UML}
 bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>160</y>
+      <w>250</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-x
+m2=1..*</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>220</y>
+      <w>120</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=x-&gt;
+m1=0..*
+m2=1
+Dirigido Por ^</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>270</y>
+      <w>240</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Form&gt;&gt;
+AssistantDashboard 
+--
+-TotalTutorials: Integer
+-AverageTimeSession: Double
+-DeviationTimeSession: Double
+-MinimumTimeSession: Double
+-MaximumTimeSession: Double
+-AverageTimeTutorial: Double
+-DeviationTimeTutorial: Double
+-MinimumTimeTutorial: Double
+-MaximumTimeTutorial: Double
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>260</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+SessionType
+--
++ THEORY, 
++ HANDS_ON
+bg=green
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

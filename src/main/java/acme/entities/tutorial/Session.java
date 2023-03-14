@@ -1,15 +1,16 @@
 
-package acme.entities.Tutorial;
+package acme.entities.tutorial;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Range;
 
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
@@ -35,12 +36,13 @@ public class Session extends AbstractEntity {
 	private SessionType			sessionType;
 
 	@NotNull
-	@Min(value = 1)
-	@Max(value = 5)
+	@Range(min = 1, max = 5)
 	private Integer				duration;
 
 	private String				link;
 
+	@NotNull
+	@Valid
 	@ManyToOne
 	private Tutorial			tutorial;
 

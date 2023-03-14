@@ -6,7 +6,7 @@ import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-import acme.entities.Tutorial.Tutorial;
+import acme.entities.tutorial.Tutorial;
 import acme.framework.data.AbstractRole;
 import lombok.Getter;
 import lombok.Setter;

@@ -3,8 +3,8 @@ package acme.roles;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.data.AbstractRole;
@@ -19,15 +19,15 @@ public class Auditor extends AbstractRole {
 	private static final long	serialVersionUID	= 1L;
 
 	@NotBlank
-	@Size(max = 76)
+	@Length(max = 76, min = 0)
 	private String				firm;
 
 	@NotBlank
-	@Size(max = 26)
+	@Length(max = 26, min = 0)
 	private String				profesionalId;
 
 	@NotBlank
-	@Size(max = 101)
+	@Length(max = 101, min = 0)
 	private String				certifications;
 
 	@URL

@@ -1,0 +1,4 @@
+key,title,abstractText,sessionType,duration,link,key-tutorial
+TutorialSession-1,first session,Introduction,THEORY,2023/03/15 14:15,null,tutorial-1
+TutorialSession-2,second session,First Lesson,HANDS_ON,2023/03/16 17:24,null,tutorial-1
+TutorialSession-3,New session,Next Lesson,HANDS_ON,2023/03/20 12:20,https://www.youtube.com/,tutorial-2

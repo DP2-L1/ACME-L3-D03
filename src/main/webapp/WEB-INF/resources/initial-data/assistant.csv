@@ -1,2 +1,3 @@
 key,key:userAccount,supervisor,expertise,resume,link
-assistant1,user-account-assistant1-01,Robert,Mates,Profesor,null
+assistant1,user-account-assistant-01,Robert,Maths,Profesor,null
+assistant2,user-account-assistant-02,Bob,"Program, Physics",Developer,null

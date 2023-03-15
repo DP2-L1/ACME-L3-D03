@@ -58,14 +58,15 @@ bg=GREEN</panel_attributes>
       <x>70</x>
       <y>308</y>
       <w>266</w>
-      <h>91</h>
+      <h>98</h>
     </coordinates>
     <panel_attributes>«Entity»
 Lecture
 --
 + title: String {NotBlank, Legth(max=75)}
 + abstract: String {NotBlank, Legth(max=100)}
-+ estimated_learning_time: Integer {Hours, PositiveOrZero}
++ startDate: Date {NotNull, PastOrPresent, Temporal}
++ endDate: Date {NotNull, PastOrPresent, Temporal}
 + Indicator: Indicator
 + link: String {URL, Optional}
 
@@ -117,16 +118,13 @@ m1=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>469</x>
+      <x>490</x>
       <y>273</y>
-      <w>154</w>
-      <h>63</h>
+      <w>112</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>«Entity»
 Class
---
-+ aula: String
-
 bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
@@ -134,14 +132,14 @@ bg=GREEN</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>329</x>
-      <y>329</y>
+      <y>301</y>
       <w>245</w>
-      <h>63</h>
+      <h>91</h>
     </coordinates>
     <panel_attributes>lt=&lt;-x
 m2=1..*
 m1=1</panel_attributes>
-    <additional_attributes>10.0;60.0;310.0;60.0;310.0;10.0</additional_attributes>
+    <additional_attributes>10.0;100.0;310.0;100.0;310.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>

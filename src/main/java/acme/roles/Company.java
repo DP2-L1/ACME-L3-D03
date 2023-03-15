@@ -16,18 +16,23 @@ import lombok.Setter;
 @Setter
 public class Company extends AbstractRole {
 
+	/**
+	 * 
+	 */
+	private static final long	serialVersionUID	= 1L;
+
 	@NotBlank
-	protected String	name;
+	protected String			name;
 
 	@NotBlank
 	@Length(min = 0, max = 26)
-	protected String	vatNumber;
+	protected String			vatNumber;
 
 	@NotBlank
 	@Length(min = 0, max = 101)
-	protected String	summary;
+	protected String			summary;
 
 	@URL
-	protected String	optionalLink;
+	protected String			optionalLink;
 
 }

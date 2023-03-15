@@ -3,12 +3,15 @@ package acme.entities.tutorial;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import acme.framework.data.AbstractEntity;
+import acme.roles.Assistant;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -38,5 +41,10 @@ public class Tutorial extends AbstractEntity {
 
 	@NotNull
 	private Integer				estimatedTotalTime;
+
+	@NotNull
+	@Valid
+	@ManyToOne
+	private Assistant			assistant;
 
 }

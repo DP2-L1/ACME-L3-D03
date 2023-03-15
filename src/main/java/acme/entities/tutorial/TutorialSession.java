@@ -8,11 +8,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
+import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
-import org.hibernate.validator.constraints.Range;
 
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
@@ -21,7 +20,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Session extends AbstractEntity {
+public class TutorialSession extends AbstractEntity {
 
 	private static final long	serialVersionUID	= 1L;
 
@@ -38,8 +37,8 @@ public class Session extends AbstractEntity {
 	private SessionType			sessionType;
 
 	@NotNull
-	@Temporal(TemporalType.TIME)
-	@Range(min = 1, max = 5)
+	@Temporal(TemporalType.TIMESTAMP)
+	@Future
 	private Integer				duration;
 
 	private String				link;

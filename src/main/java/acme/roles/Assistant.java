@@ -2,13 +2,11 @@
 package acme.roles;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.URL;
 
-import acme.entities.tutorial.Tutorial;
 import acme.framework.data.AbstractRole;
 import lombok.Getter;
 import lombok.Setter;
@@ -38,6 +36,4 @@ public class Assistant extends AbstractRole {
 	@URL
 	private String				Link;
 
-	@ManyToOne
-	private Tutorial			tutorial;
 }

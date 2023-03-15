@@ -1,0 +1,3 @@
+key,title,abstracto,start-date,end-date,body,indicator,link,key:lecturer
+lecture-01,Titulo1,Introduccion a la asignatura.,2022/01/01 09:00:00,2022/01/01 11:00:00,Clase de presentación de la asignatura.,Theory,https://www.lecture01.com,lecturer-01
+lecture-02,Titulo2,Introduccion,2022/01/01 09:00:00,2022/01/01 11:00:00,Clase de presentación de la asignatura.,Theory,https://www.lecture02.com,lecturer-02

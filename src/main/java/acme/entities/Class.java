@@ -3,6 +3,7 @@ package acme.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
 
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
@@ -19,11 +20,11 @@ public class Class extends AbstractEntity {
 
 	// Atributes ------------------------------------------------------------
 
-	protected String			aula;
-
+	@NotNull
 	@ManyToOne
 	protected Course			course;
 
+	@NotNull
 	@ManyToOne
 	protected Lecture			lecture;
 

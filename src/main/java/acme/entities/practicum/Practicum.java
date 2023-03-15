@@ -1,5 +1,5 @@
 
-package acme.entities;
+package acme.entities.practicum;
 
 import java.util.Date;
 
@@ -10,6 +10,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
@@ -24,27 +25,33 @@ import lombok.Setter;
 @Setter
 public class Practicum extends AbstractEntity {
 
+	/**
+	 * 
+	 */
+	private static final long	serialVersionUID	= 1L;
+
 	@Pattern(regexp = "[A-Z]{1,3}\\d\\d{3}")
 	@NotBlank
 	@Column(unique = true)
-	private String		code;
+	private String				code;
 
 	@NotBlank
 	@Length(min = 0, max = 76)
-	protected String	title;
+	protected String			title;
 
 	@NotBlank
 	@Length(min = 0, max = 101)
-	protected String	practicumAbstract;
+	protected String			practicumAbstract;
 
 	@NotBlank
 	@Length(min = 0, max = 101)
-	protected String	goals;
+	protected String			goals;
 
 	@Temporal(value = TemporalType.TIME)
-	protected Date		estimatedTime;
+	protected Date				estimatedTime;
 
-	@ManyToOne()
+	@ManyToOne(optional = false)
 	@Valid
-	protected Company	keycompany;
+	@NotNull
+	protected Company			keycompany;
 }

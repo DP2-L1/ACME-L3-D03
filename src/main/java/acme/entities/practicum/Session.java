@@ -1,5 +1,5 @@
 
-package acme.entities;
+package acme.entities.practicum;
 
 import java.util.Date;
 
@@ -10,6 +10,7 @@ import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
@@ -22,21 +23,27 @@ import lombok.Setter;
 @Setter
 public class Session extends AbstractEntity {
 
+	/**
+	 * 
+	 */
+	private static final long	serialVersionUID	= 1L;
+
 	@NotBlank
 	@Length(min = 0, max = 76)
-	protected String	title;
+	protected String			title;
 
 	@NotBlank
 	@Length(min = 0, max = 101)
-	protected String	sessionAbstract;
+	protected String			sessionAbstract;
 
-	@Temporal(value = TemporalType.TIME)
+	@Temporal(value = TemporalType.TIMESTAMP)
 	@FutureOrPresent
-	protected Date		timePeriod;
+	protected Date				timePeriod;
 
-	protected String	optionalLink;
+	protected String			optionalLink;
 
-	@ManyToOne()
+	@ManyToOne(optional = false)
 	@Valid
-	protected Practicum	keypracticum;
+	@NotNull
+	protected Practicum			keypracticum;
 }

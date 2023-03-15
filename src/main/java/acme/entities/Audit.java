@@ -36,6 +36,7 @@ public class Audit extends AbstractEntity {
 	@Length(max = 101, min = 0)
 	private String				weakPoints;
 
+	// TODO: Computed as the mode of the marks in the corresponding auditing records; ties must be broken arbitrarily if neccesary
 	private String				mark;
 
 }

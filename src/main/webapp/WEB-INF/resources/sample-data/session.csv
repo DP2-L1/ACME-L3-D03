@@ -1,3 +1,3 @@
-key,title,sessionAbstract,timePeriod,optionalLink,key:keypracticum
-session-02,practicas de fontanería en alcalá,curso autodidacta de programacion en sql,2023/04/17 12:30,null,practicum-02
-session-01,Practicas de backend developer en google,en este curso obtendras una gran experiencia en el campo del back testing,2023/03/27 01:30,https://es.indeed.com/jobs?q=Pr%C3%A1cticas+backend+web+developer&from=mobRdr&utm_source=%2Fm%2F&utm_medium=redir&utm_campaign=dt&vjk=e541177e3d9ee4f9,practicum-01
+key,title,sessionAbstract,timePeriodStart,optionalLink,key:keypracticum,timePeriodEnd
+session-02,practicas de fontanería en alcalá,curso autodidacta de programacion en sql,2023/04/17 12:30,null,practicum-02,2023/04/21 12:30
+session-01,Practicas de backend developer en google,en este curso obtendras una gran experiencia en el campo del back testing,2023/03/27 01:30,https://es.indeed.com/jobs?q=Pr%C3%A1cticas+backend+web+developer&from=mobRdr&utm_source=%2Fm%2F&utm_medium=redir&utm_campaign=dt&vjk=e541177e3d9ee4f9,practicum-01,2023/03/30 01:30

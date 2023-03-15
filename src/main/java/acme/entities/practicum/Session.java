@@ -8,7 +8,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
-import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -37,8 +36,10 @@ public class Session extends AbstractEntity {
 	protected String			sessionAbstract;
 
 	@Temporal(value = TemporalType.TIMESTAMP)
-	@FutureOrPresent
-	protected Date				timePeriod;
+	protected Date				timePeriodStart;
+
+	@Temporal(value = TemporalType.TIMESTAMP)
+	protected Date				timePeriodEnd;
 
 	protected String			optionalLink;
 

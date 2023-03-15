@@ -1,3 +1,3 @@
-key,key:userAccount,name,vatNumber,summary
-company-02,user-account-company-02,company2,1556757567567456456,este es un pequeño resumen
-company-01,user-account-company-01,company1,1656756756756,este es otro pequeño resumen
+key,key:userAccount,name,vatNumber,summary,optionalLink
+company-02,user-account-company-02,company2,1556757567567456456,este es un pequeño resumen,null
+company-01,user-account-company-01,company1,1656756756756,este es otro pequeño resumen,http://www.webgraphviz.com/

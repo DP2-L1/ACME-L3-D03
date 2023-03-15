@@ -3,3 +3,5 @@ user-account-anonymous-01,false,"UserIdentity{name: 'John', surname: 'Doe', emai
 user-account-administrator-01,true,"UserIdentity{name: 'Administrator', surname: 'Acme', email: 'administrator@acme.com'}",administrator,administrator
 user-account-company-02,true,"UserIdentity{name: 'company1', surname: 'company1', email: 'company1@acme.com'}",company2,company2
 user-account-company-01,true,"UserIdentity{name: 'company1', surname: 'Company 1', email: 'company1@acme.com'}",company1,company1
+user-account-auditor-02,true,"UserIdentity{name: 'auditor2' ,surname: 'auditor2', email: 'auditor2@acme.com'}",auditor2,auditor2
+user-account-auditor-01,true,"UserIdentity{name: 'auditor1' ,surname: 'auditor1', email: 'auditor1@acme.com'}",auditor1,auditor1

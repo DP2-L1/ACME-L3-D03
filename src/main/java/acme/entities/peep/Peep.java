@@ -1,7 +1,9 @@
 
 package acme.entities.peep;
 
-import java.sql.Date;
+
+import java.util.Date;
+
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
@@ -15,9 +17,11 @@ import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
-import org.springframework.security.core.userdetails.User;
+
 
 import acme.framework.components.accounts.Administrator;
+import acme.framework.components.accounts.UserAccount;
+
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -57,7 +61,8 @@ public class Peep extends AbstractEntity {
 	@NotNull
 	@Valid
 	@ManyToOne
-	private User				user;
+
+	private UserAccount			user;
 
 	@NotNull
 	@Valid

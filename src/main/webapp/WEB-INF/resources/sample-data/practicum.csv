@@ -1,3 +1,4 @@
-key,code,title,practicumAbstract,goals,key:keycompany
+key,code,title,practicumAbstract,goals,key:company
 practicum-02,ABC3457,curso autodidacta de programacion en sql,Lorem ipsum dolor sit amet consectetur adipiscing elit Morbi pretium,programming create a sql database succesfully,company-02
-practicum-01,CE1234,curso de hablar en publico,aprende a hablar en publico,partnership,company-01
+practicum-03,D5674,curso,curso,curso,company-02
+practicum-01,CE1234,curso de hablar en publico,aprende a hablar en publico,partnership leadership,company-01

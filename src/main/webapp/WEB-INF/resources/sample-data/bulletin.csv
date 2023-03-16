@@ -1,3 +1,4 @@
 key,instationMoment,title,message,isCritical,link,key:administrador
-bulletin-02,2022/06/17 12:30,tablón de mensajes para desarrolladores software,Lorem ipsum dolor sit amet consectetur adipiscing elit Morbi pretium,false,null,administrator-02
+bulletin-02,2022/06/17 12:30,tablón de discusión del framework ACME,Lorem ipsum dolor sit amet consectetur adipiscing elit Morbi pretium,false,null,administrator-02
+bulletin-03,2022/06/26 00:05,tablón de mensajes común,tablón para que todos puedan hablar,true,null,administrator-02
 bulletin-01,2022/06/27 01:30,tablón simple,tablón común,true,https://ev.us.es/ultra/courses/_63009_1/cl/outline,administrator-03

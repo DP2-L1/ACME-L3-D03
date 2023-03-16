@@ -5,5 +5,3 @@ user-account-company-02,true,"UserIdentity{name: 'company1', surname: 'company1'
 user-account-administrator-03,true,"UserIdentity{name: 'administrator2', surname: 'administrator2', email: 'administrator2@acme.com'}",administrator2,administrator2
 user-account-administrator-02,true,"UserIdentity{name: 'administrator1', surname: 'administrator1', email: 'administrator1@acme.com'}",administrator1,administrator1
 user-account-company-01,true,"UserIdentity{name: 'company1', surname: 'Company 1', email: 'company1@acme.com'}",company1,company1
-user-account-assistant-01,true,"UserIdentity{name: 'Assistant1', surname: 'first', email: 'assistan1@acme.com'}",assistant1,assistant1
-user-account-assistant-02,true,"UserIdentity{name: 'Assistant2', surname: 'second', email: 'assistan2@acme.com'}",assistant2,assistant2

@@ -1,4 +1,4 @@
-key,title,abstract-activity,activity-type,period-start,period-end,link,key:enrolment
+key,title,abstract_act,activity-type,startPeriod,endPeriod,link,key:enrolment
 activity-01,This title is going to reach exactly 75chr so the restriction can be proved,Resume 1,THEORY,2022/01/04 09:00,2022/01/04 11:00,null,enrolment-01
 activity-02,This title will reach exactly 75 - 1 char so the restriction can be proved,Resume 2,THEORY,2022/01/08 14:30,2022/01/08 16:00,null,enrolment-02
 activity-03,T,Resume 3,HANDS_ON,2022/02/01 11:45,2022/02/01 13:15,null,enrolment-03

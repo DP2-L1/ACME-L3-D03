@@ -20,7 +20,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Session extends AbstractEntity {
+public class PracticumSession extends AbstractEntity {
 
 	/**
 	 * 
@@ -36,9 +36,11 @@ public class Session extends AbstractEntity {
 	protected String			sessionAbstract;
 
 	@Temporal(value = TemporalType.TIMESTAMP)
+	@NotNull
 	protected Date				timePeriodStart;
 
 	@Temporal(value = TemporalType.TIMESTAMP)
+	@NotNull
 	protected Date				timePeriodEnd;
 
 	protected String			optionalLink;
@@ -46,5 +48,5 @@ public class Session extends AbstractEntity {
 	@ManyToOne(optional = false)
 	@Valid
 	@NotNull
-	protected Practicum			keypracticum;
+	protected Practicum			practicum;
 }

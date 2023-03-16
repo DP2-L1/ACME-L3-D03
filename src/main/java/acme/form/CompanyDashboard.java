@@ -24,15 +24,15 @@ public class CompanyDashboard extends AbstractForm {
 	private Integer				TotalNumberCoursesHandsOn;
 
 	//average,deviation,minimum,maximum period length of the sessions in the company practica
-	private Double				AverageSessionPeriodLength;
-	private Double				deviationSessionPeriodLength;
+	private Date				AverageSessionPeriodLength;
+	private Date				deviationSessionPeriodLength;
 	private Date				MinimunSessionPeriodLength;
 	private Date				MaximumSessionPeriodLength;
 
 	//average, deviation, minimum, and maximum period length of their practica
 
-	private Double				AveragePracticumEstimatedLength;
-	private Double				deviationPracticumEstimatedLength;
+	private Date				AveragePracticumEstimatedLength;
+	private Date				deviationPracticumEstimatedLength;
 	private Date				MinimunPracticumEstimatedLength;
 	private Date				MaximumPracticumEstimatedLength;
 }

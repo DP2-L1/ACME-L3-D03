@@ -1,16 +1,15 @@
 
-package acme.entities;
+package acme.entities.banner;
 
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 
-import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.data.AbstractEntity;
@@ -20,29 +19,26 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Note extends AbstractEntity {
+public class Banner extends AbstractEntity {
 
 	private static final long	serialVersionUID	= 1L;
 
+	@Temporal(TemporalType.TIMESTAMP)
 	@Past
-	@Temporal(value = TemporalType.TIMESTAMP)
-	private Date				instationMoment;
+	private Date				instantiationMoment;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				displayPeriodStart;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				displayPeriodEnd;
+
+	@URL
+	private String				picture;
 
 	@NotBlank
-	@Length(max = 75)
-	private String				title;
-
-	@NotBlank
-	@Length(max = 100)
-	private String				message;
-
-	//Propiedad derivada
-	@NotBlank
-	@Length(max = 75)
-	private String				author;
-
-	@Email
-	private String				email;
+	@Size(max = 76)
+	private String				slogan;
 
 	@URL
 	private String				link;

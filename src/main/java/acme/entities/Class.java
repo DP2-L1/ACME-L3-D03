@@ -21,11 +21,11 @@ public class Class extends AbstractEntity {
 	// Atributes ------------------------------------------------------------
 
 	@NotNull
-	@ManyToOne
+	@ManyToOne(optional = false)
 	protected Course			course;
 
 	@NotNull
-	@ManyToOne
+	@ManyToOne(optional = false)
 	protected Lecture			lecture;
 
 }

@@ -1,3 +1,5 @@
 key,username,password,identity,enabled
 user-account-lecturer-01,lecturer1,lecturer1,"UserIdentity{name: 'Lecturer1', surname: 'One', email: 'lecturer1@mail.com'}",true
 user-account-lecturer-02,lecturer2,lecturer2,"UserIdentity{name: 'Lecturer2', surname: 'Two', email: 'lecturer2@mail.com'}",true
+user-account-student-01,student1,student1,"UserIdentity{name: 'Student1', surname: 'Uno', email: 'student1@mail.com'}",true
+user-account-student-02,student2,student2,"UserIdentity{name: 'Student2', surname: 'Dos', email: 'student2@mail.com'}",true

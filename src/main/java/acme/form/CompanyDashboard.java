@@ -21,7 +21,7 @@ public class CompanyDashboard extends AbstractForm {
 	//Total Number of practica regarding theory or hands-on courses grouped by month during the last year
 
 	private Integer				TotalNumberPracticumTheory;
-	private Integer				TotalNumberPracticumHandsOn;
+	private Integer				TotalNumberCoursesHandsOn;
 
 	//average,deviation,minimum,maximum period length of the sessions in the company practica
 	private Double				AverageSessionPeriodLength;

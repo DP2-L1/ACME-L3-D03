@@ -155,4 +155,30 @@ HANDS_ON
 bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>322</x>
+      <y>245</y>
+      <w>98</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Purely theoretical
+courses
+must be rejected by 
+the system
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>364</x>
+      <y>189</y>
+      <w>63</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;80.0;70.0;10.0</additional_attributes>
+  </element>
 </diagram>

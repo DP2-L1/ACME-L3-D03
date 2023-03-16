@@ -12,6 +12,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
@@ -20,7 +21,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Session extends AbstractEntity {
+public class PracticumSession extends AbstractEntity {
 
 	/**
 	 * 
@@ -36,15 +37,18 @@ public class Session extends AbstractEntity {
 	protected String			sessionAbstract;
 
 	@Temporal(value = TemporalType.TIMESTAMP)
+	@NotNull
 	protected Date				timePeriodStart;
 
 	@Temporal(value = TemporalType.TIMESTAMP)
+	@NotNull
 	protected Date				timePeriodEnd;
 
+	@URL
 	protected String			optionalLink;
 
 	@ManyToOne(optional = false)
 	@Valid
 	@NotNull
-	protected Practicum			keypracticum;
+	protected Practicum			practicum;
 }

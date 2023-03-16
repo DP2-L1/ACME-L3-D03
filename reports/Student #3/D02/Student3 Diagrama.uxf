@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>664</x>
+      <y>200</y>
+      <w>376</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Session
+--
+-Title: String {NotBlank, Length(76)}
+-Abstract: String {NotBlank, Length(101)}
+-Session_type: SessionType 
+-Duration: Date {NotNull,Temporal(TemporalType.TIMESTAMP),Future}
+-Link: String {URL}
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>152</x>
+      <y>192</y>
+      <w>336</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Tutorial 
+--
+-Code: String {Unique, NotBlank, Pattern([A-Z]{1,3}[0-9][0-9]{3})}
+-Title: String {NotBlank, Length(76)}
+-Abstract: String {NotBlank, Length(101)}
+-Goals: String {NotBlank, Length(101)}
+-EstimatedTotalTime: Integer
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>400</y>
+      <w>232</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Role&gt;&gt;
+Assistant
+--
+-Supervisor: String {NotBlank, Length(76)}
+-Expertise: String {NotBlank, Length(101)}
+-Resume: String {NotBlank, Length(101)}
+-Link: String {UML}
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>248</y>
+      <w>200</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-x
+m2=1..*</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>296</y>
+      <w>96</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=x-&gt;
+m1=1..*
+m2=1
+Dirigido Por v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>336</y>
+      <w>192</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Form&gt;&gt;
+AssistantDashboard 
+--
+-TotalTutorials: Integer
+-AverageTimeSession: Double
+-DeviationTimeSession: Double
+-MinimumTimeSession: Double
+-MaximumTimeSession: Double
+-AverageTimeTutorial: Double
+-DeviationTimeTutorial: Double
+-MinimumTimeTutorial: Double
+-MaximumTimeTutorial: Double
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>696</x>
+      <y>336</y>
+      <w>128</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+SessionType
+--
++ THEORY, 
++ HANDS_ON
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>840</x>
+      <y>336</y>
+      <w>136</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Duration debe ser con 1
+dia de antelación
+y debe durar entre
+1 y 5 horas
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>920</x>
+      <y>304</y>
+      <w>48</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>248</x>
+      <y>80</y>
+      <w>128</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Course
+bg=GREEN
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>304</x>
+      <y>112</y>
+      <w>64</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1..*
+Tiene v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+</diagram>

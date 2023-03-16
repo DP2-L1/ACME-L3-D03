@@ -9,11 +9,11 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
-import javax.validation.constraints.PositiveOrZero;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
+import acme.framework.components.datatypes.Money;
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -49,8 +49,8 @@ public class Offer extends AbstractEntity {
 	@NotNull
 	protected Date				availabilityPeriodEnd;
 
-	@PositiveOrZero
-	protected Integer			price;
+	@NotNull
+	protected Money				price;
 
 	@URL
 	protected String			optionalLink;

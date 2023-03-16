@@ -4,7 +4,6 @@ package acme.entities;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
@@ -14,9 +13,8 @@ import javax.validation.constraints.PastOrPresent;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import acme.entities.enums.Indicator;
+import acme.entities.enums.LectureType;
 import acme.framework.data.AbstractEntity;
-import acme.roles.Lecturer;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -37,30 +35,27 @@ public class Lecture extends AbstractEntity {
 
 	@NotBlank
 	@Length(max = 100)
-	protected String			abstracto;
+	protected String			lectureAbstract;
 
 	//estimatedLearningTime
 	@NotNull
 	@PastOrPresent
 	@Temporal(TemporalType.TIMESTAMP)
-	protected Date				startDate;
+	protected Date				startPeriod;
 
 	@NotNull
 	@PastOrPresent
 	@Temporal(TemporalType.TIMESTAMP)
-	protected Date				endDate;
+	protected Date				endPeriod;
 
 	@NotBlank
 	@Length(max = 100)
 	protected String			body;
 
-	protected Indicator			indicator;
+	@NotNull
+	protected LectureType		lectureType;
 
 	@URL
 	protected String			link;
-
-	@NotNull
-	@ManyToOne
-	protected Lecturer			lecturer;
 
 }

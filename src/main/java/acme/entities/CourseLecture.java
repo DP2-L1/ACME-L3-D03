@@ -9,16 +9,15 @@ import acme.framework.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
 
+@Entity
 @Getter
 @Setter
-@Entity
-public class Class extends AbstractEntity {
+public class CourseLecture extends AbstractEntity {
 
-	// Serialisation identifier ---------------------------------------------
-
+	/**
+	 * 
+	 */
 	private static final long	serialVersionUID	= 1L;
-
-	// Atributes ------------------------------------------------------------
 
 	@NotNull
 	@ManyToOne(optional = false)

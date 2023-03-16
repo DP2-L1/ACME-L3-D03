@@ -42,7 +42,10 @@ public class Offer extends AbstractEntity {
 	protected String			summary;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	protected Date				availabilityPeriod;
+	protected Date				availabilityPeriodStart;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date				availabilityPeriodEnd;
 
 	@PositiveOrZero
 	protected Double			price;

@@ -1,5 +1,5 @@
 
-package acme.entities;
+package acme.entities.lecture;
 
 import java.util.Date;
 
@@ -13,7 +13,6 @@ import javax.validation.constraints.PastOrPresent;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import acme.entities.enums.LectureType;
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;

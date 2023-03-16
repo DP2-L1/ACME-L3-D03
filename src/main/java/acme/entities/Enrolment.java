@@ -1,11 +1,12 @@
 package acme.entities;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -26,7 +27,7 @@ public class Enrolment extends AbstractEntity {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	@Pattern(regexp = "[A-Z]{1,3}[0-9][0-9]{3}")
+	@Pattern(regexp = "^[A-Z]{1,3}[0-9]{3}$")
 	@NotBlank
 	@Column(unique = true)
 	protected String code;
@@ -40,20 +41,14 @@ public class Enrolment extends AbstractEntity {
 	protected String goals;
 
 	@NotNull
-	@Temporal(TemporalType.TIME)
-	protected Integer workTimeInHours;
-
-	@Valid
-	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
+	protected Date workTime;
 
 	@ManyToOne(optional = false)
 	protected Student student;
 
-	/*
-	 * @Valid
-	 * 
-	 * @NotNull
-	 * 
-	 * @ManyToOne(optional = false) protected Course course;
-	 */
+	@NotNull
+	@ManyToOne(optional = false)
+	protected Course course;
+
 }

@@ -6,7 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -20,7 +19,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class workbook extends AbstractEntity {
+public class Workbook extends AbstractEntity {
 
 	/**
 	 * 
@@ -38,13 +37,12 @@ public class workbook extends AbstractEntity {
 	protected Indication indication;
 
 	@NotNull
-	@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.TIME)
 	protected Date timePeriod;
 
 	@URL
 	protected String link;
 
-	@Valid
 	@NotNull
 	@OneToOne(optional = false)
 	protected Enrolment enrolment;

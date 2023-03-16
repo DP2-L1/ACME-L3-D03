@@ -1,0 +1,3 @@
+key,username,password,identity,enabled
+user-account-lecturer-01,lecturer1,lecturer1,"UserIdentity{name: 'Lecturer1', surname: 'One', email: 'lecturer1@mail.com'}",true
+user-account-lecturer-02,lecturer2,lecturer2,"UserIdentity{name: 'Lecturer2', surname: 'Two', email: 'lecturer2@mail.com'}",true

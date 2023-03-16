@@ -8,6 +8,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
@@ -26,6 +27,7 @@ public class Note extends AbstractEntity {
 
 	@Past
 	@Temporal(value = TemporalType.TIMESTAMP)
+	@NotNull
 	private Date				instationMoment;
 
 	@NotBlank
@@ -36,7 +38,6 @@ public class Note extends AbstractEntity {
 	@Length(max = 100)
 	private String				message;
 
-	//Propiedad derivada
 	@NotBlank
 	@Length(max = 75)
 	private String				author;

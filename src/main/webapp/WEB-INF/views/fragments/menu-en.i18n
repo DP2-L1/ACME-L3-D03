@@ -52,3 +52,13 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+
+# master.menu.authenticated ####################################################
+
+master.menu.authenticated = Authenticated
+master.menu.authenticated.practicums = List all Practicums by Course
+
+# master.menu.company ####################################################
+master.menu.company = Company
+master.menu.company.practicum.list = List my Practica
+

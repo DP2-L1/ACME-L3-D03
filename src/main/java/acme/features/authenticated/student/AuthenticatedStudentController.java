@@ -17,11 +17,15 @@ public class AuthenticatedStudentController extends AbstractController<Authentic
 	@Autowired
 	protected AuthenticatedStudentCreateService createService;
 
+	@Autowired
+	protected AuthenticatedStudentUpdateService updateService;
+
 	// Constructors -----------------------------------------------------------
 
 	@PostConstruct
 	protected void initialise() {
 		super.addBasicCommand("create", this.createService);
+		super.addBasicCommand("update", this.updateService);
 	}
 
 }

@@ -52,6 +52,8 @@ public class Course extends AbstractEntity {
 	@URL
 	protected String			link;
 
+	protected boolean			draftMode;
+
 	@NotNull
 	@PositiveOrZero
 	protected Double			estimatedTotalTime;

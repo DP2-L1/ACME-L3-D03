@@ -13,7 +13,9 @@ import acme.framework.services.AbstractService;
 public class AnyCourseShowService extends AbstractService<Any, Course> {
 
 	@Autowired
-	protected AnyCourseRepository repo;
+	protected AnyCourseRepository repository;
+
+	// AbstractService interface -----------------------------------------
 
 
 	@Override
@@ -30,7 +32,7 @@ public class AnyCourseShowService extends AbstractService<Any, Course> {
 		final Course course;
 
 		id = super.getRequest().getData("id", int.class);
-		course = this.repo.findCourseById(id);
+		course = this.repository.findCourseById(id);
 		status = course != null;
 
 		super.getResponse().setAuthorised(status);
@@ -42,7 +44,7 @@ public class AnyCourseShowService extends AbstractService<Any, Course> {
 		int id;
 
 		id = super.getRequest().getData("id", int.class);
-		object = this.repo.findCourseById(id);
+		object = this.repository.findCourseById(id);
 
 		super.getBuffer().setData(object);
 	}
@@ -54,5 +56,4 @@ public class AnyCourseShowService extends AbstractService<Any, Course> {
 		tuple = super.unbind(object, "code", "title", "courseAbstract", "courseType", "retailPrice", "link", "draftMode");
 		super.getResponse().setData(tuple);
 	}
-
 }

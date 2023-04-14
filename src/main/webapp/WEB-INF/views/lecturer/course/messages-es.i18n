@@ -1,0 +1,13 @@
+lecturer.course.form.label.code = Código
+lecturer.course.form.label.title = Título
+lecturer.course.form.label.abstract = Abstracto
+lecturer.course.form.label.type = Tipo
+lecturer.course.form.label.price = Precio
+lecturer.course.form.label.link = Enlace
+lecturer.course.form.label.draft = Modo
+lecturer.course.lectures = Clases
+lecturer.course.create = Create
+lecturer.course.form.button.create = Crear
+lecturer.course.form.button.update = Actualizar
+lecturer.course.form.button.delete = Borrar
+lecturer.course.form.button.publish = Publicar

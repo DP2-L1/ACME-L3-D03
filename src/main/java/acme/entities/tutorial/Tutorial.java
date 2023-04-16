@@ -43,6 +43,8 @@ public class Tutorial extends AbstractEntity {
 	@NotNull
 	private Integer				estimatedTotalTime;
 
+	protected boolean			draftMode;
+
 	@NotNull
 	@Valid
 	@ManyToOne

@@ -1,0 +1,25 @@
+assistant.tutorial.list.label.code = Codigo:
+assistant.tutorial.list.label.title = Titulo:
+assistant.tutorial.list.label.abstractText = Texto:
+assistant.tutorial.list.label.goals = Objetivo:
+assistant.tutorial.list.label.estimatedTotalTime = Tiempo Estimado:
+
+assistant.tutorial.list.button.create = Crear
+
+assistant.tutorial.form.label.code = Codigo
+assistant.tutorial.form.label.course = Curso
+assistant.tutorial.form.label.title = Titulo
+assistant.tutorial.form.label.abstractText = Texto
+assistant.tutorial.form.label.goals = Objetivo
+assistant.tutorial.form.label.estimatedTotalTime = Tiempo Estimado
+
+assistant.tutorial.form.placeholder.score = 50
+assistant.tutorial.form.button.create = Crear
+
+assistant.tutorial.form.button.sessions = Sesiones
+assistant.tutorial.form.button.update = Actualizar
+assistant.tutorial.form.button.delete = Borrar
+assistant.tutorial.form.button.publish = Publicar
+
+assistant.tutorial.form.error.duplicated = Este codigo ya esta cogido
+

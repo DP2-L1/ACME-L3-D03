@@ -1,0 +1,6 @@
+assistant.tutorialSession.list.label.title = Title
+assistant.tutorialSession.list.label.abstractText = Text
+assistant.tutorialSession.list.label.duration = Duration
+assistant.tutorialSession.list.label.sessionType = Session Type
+
+assistant.tutorial.list.button.create = Create

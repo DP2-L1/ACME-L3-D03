@@ -13,7 +13,8 @@ assistant.tutorial.form.label.abstractText = Texto
 assistant.tutorial.form.label.goals = Objetivo
 assistant.tutorial.form.label.estimatedTotalTime = Tiempo Estimado
 
-assistant.tutorial.form.placeholder.score = 50
+assistant.tutorial.form.placeholder.estimatedTime = En minutos
+assistant.tutorial.form.placeholder.code = El codigo debe comenzar entre 1 y 3 letras mayusculas seguidas de 4 digitos
 assistant.tutorial.form.button.create = Crear
 
 assistant.tutorial.form.button.sessions = Sesiones

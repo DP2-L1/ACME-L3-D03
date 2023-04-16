@@ -4,12 +4,12 @@
 <%@taglib prefix="acme" uri="http://www.the-acme-framework.org/"%>
 
 <acme:form> 
-	<acme:input-textbox code="assistant.tutorial.form.label.code" path="reference"/>
+	<acme:input-textbox code="assistant.tutorial.form.label.code" path="code" placeholder="assistant.tutorial.form.placeholder.code"/>
 	<acme:input-select code="assistant.tutorial.form.label.course" path="course" choices="${courses}"/>	
 	<acme:input-textbox code="assistant.tutorial.form.label.title" path="title"/>
 	<acme:input-textbox code="assistant.tutorial.form.label.abstractText" path="abstractText"/>
 	<acme:input-textbox code="assistant.tutorial.form.label.goals" path="goals"/>
-	<acme:input-integer code="assistant.tutorial.form.label.estimatedTotalTime" path="estimatedTotalTime" placeholder="assistant.tutorial.form.placeholder.score"/>
+	<acme:input-integer code="assistant.tutorial.form.label.estimatedTotalTime" path="estimatedTotalTime" placeholder="assistant.tutorial.form.placeholder.estimatedTime"/>
 
 	<jstl:choose>	 
 		<jstl:when test="${_command == 'show' && draftMode == false}">

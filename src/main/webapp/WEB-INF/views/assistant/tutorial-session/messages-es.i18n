@@ -1,6 +1,22 @@
 assistant.tutorialSession.list.label.title = Titulo
 assistant.tutorialSession.list.label.abstractText = Texto
-assistant.tutorialSession.list.label.duration = Duracion
+assistant.tutorialSession.list.label.startPeriod = Inicio de la sesión
+assistant.tutorialSession.list.label.endPeriod = Final de la sesión
 assistant.tutorialSession.list.label.sessionType = Tipo de sesion
 
-assistant.tutorial.list.button.create = Crear
+assistant.tutorialSession.list.button.create = Crear
+
+assistant.tutorialSession.form.label.title = Titulo
+assistant.tutorialSession.form.label.abstractText = Descripción
+assistant.tutorialSession.form.label.startPeriod = Inicio de la sesión
+assistant.tutorialSession.form.label.endPeriod = Final de la sesión
+assistant.tutorialSession.form.label.sessionType = Tipo de la sesión
+assistant.tutorialSession.form.label.link = Link
+
+assistant.tutorialSession.form.button.update = Actualizar
+assistant.tutorialSession.form.button.delete = Borrar
+assistant.tutorialSession.form.button.create = Crear
+
+assistant.TutorialSession.form.error.too-close = la fecha debe ser mínimo con un dia de antelación
+assistant.TutorialSession.form.error.end-after-start = la fecha final debe ser despues de la inicial
+assistant.TutorialSession.form.error.at-least-1-hour = la sesión debe durar al menos 1 hora

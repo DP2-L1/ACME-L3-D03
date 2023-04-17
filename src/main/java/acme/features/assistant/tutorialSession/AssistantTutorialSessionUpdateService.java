@@ -68,11 +68,17 @@ public class AssistantTutorialSessionUpdateService extends AbstractService<Assis
 		assert object != null;
 
 		if (!super.getBuffer().getErrors().hasErrors("startPeriod")) {
-			Date minimumDay;
+			Date minDayAhead;
 
-			minimumDay = MomentHelper.deltaFromCurrentMoment(1, ChronoUnit.DAYS);
-			super.state(MomentHelper.isAfter(object.getStartPeriod(), minimumDay), "startPeriod", "assistant.TutorialSession.form.error.too-close");
+			minDayAhead = MomentHelper.deltaFromCurrentMoment(1, ChronoUnit.DAYS);
+			super.state(MomentHelper.isAfter(object.getStartPeriod(), minDayAhead), "startPeriod", "assistant.TutorialSession.form.error.too-close");
 		}
+
+		if (!super.getBuffer().getErrors().hasErrors("endPeriod"))
+			super.state(MomentHelper.isAfter(object.getStartPeriod(), object.getEndPeriod()), "endPeriod", "assistant.TutorialSession.form.error.end-after-start");
+
+		if (!super.getBuffer().getErrors().hasErrors("startPeriod") && !super.getBuffer().getErrors().hasErrors("endPeriod"))
+			super.state(MomentHelper.isLongEnough(object.getStartPeriod(), object.getEndPeriod(), 1, ChronoUnit.HOURS), "startPeriod", "assistant.TutorialSession.form.error.at-least-1-hour");
 	}
 
 	@Override

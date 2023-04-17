@@ -1,7 +1,6 @@
 
 package acme.features.assistant.tutorialSession;
 
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +39,7 @@ public class AssistantTutorialSessionCreateService extends AbstractService<Assis
 
 		masterId = super.getRequest().getData("masterId", int.class);
 		tutorial = this.repository.findOneTutorialById(masterId);
-		status = tutorial != null && tutorial.isDraftMode() && super.getRequest().getPrincipal().hasRole(tutorial.getAssistant());
+		status = tutorial != null && super.getRequest().getPrincipal().hasRole(tutorial.getAssistant());
 
 		super.getResponse().setAuthorised(status);
 	}
@@ -79,19 +78,6 @@ public class AssistantTutorialSessionCreateService extends AbstractService<Assis
 	@Override
 	public void validate(final TutorialSession object) {
 		assert object != null;
-
-		if (!super.getBuffer().getErrors().hasErrors("startPeriod")) {
-			Date minDayAhead;
-
-			minDayAhead = MomentHelper.deltaFromCurrentMoment(1, ChronoUnit.DAYS);
-			super.state(MomentHelper.isAfter(object.getStartPeriod(), minDayAhead), "startPeriod", "assistant.TutorialSession.form.error.too-close");
-		}
-
-		if (!super.getBuffer().getErrors().hasErrors("endPeriod"))
-			super.state(MomentHelper.isAfter(object.getStartPeriod(), object.getEndPeriod()), "endPeriod", "assistant.TutorialSession.form.error.end-after-start");
-
-		if (!super.getBuffer().getErrors().hasErrors("startPeriod") && !super.getBuffer().getErrors().hasErrors("endPeriod"))
-			super.state(MomentHelper.isLongEnough(object.getStartPeriod(), object.getEndPeriod(), 1, ChronoUnit.HOURS), "startPeriod", "assistant.TutorialSession.form.error.at-least-1-hour");
 	}
 
 	@Override

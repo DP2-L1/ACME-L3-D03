@@ -17,7 +17,7 @@ _dM_     _dMM_  YMMMM9  _M_      _MM__MMMMMMMMM       _MMMMMMM       MM
 
                     
 
-Application:          Acme-L3
+Application:          ${acme.application.versioned-name}
 Application endpoint: http://localhost:${server.port}${server.servlet.contextPath}
 Database endpoint:    ${spring.datasource.url}
 Powered by:           Spring Boot ${spring-boot.version}, ${acme.framework.display-name} ${acme.framework.version}

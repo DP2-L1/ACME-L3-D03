@@ -1,0 +1,22 @@
+assistant.tutorialSession.list.label.title = Title
+assistant.tutorialSession.list.label.abstractText = Text
+assistant.tutorialSession.list.label.startPeriod = Start of the Session
+assistant.tutorialSession.list.label.endPeriod = End of the session
+assistant.tutorialSession.list.label.sessionType = Session Type
+
+assistant.tutorialSession.list.button.create = Create
+
+assistant.tutorialSession.form.label.title = Title
+assistant.tutorialSession.form.label.abstractText = Text
+assistant.tutorialSession.form.label.startPeriod = Start of the session
+assistant.tutorialSession.form.label.endPeriod = End of the session
+assistant.tutorialSession.form.label.sessionType = Session Type
+assistant.tutorialSession.form.label.link = Link
+
+assistant.tutorialSession.form.button.update = Update
+assistant.tutorialSession.form.button.delete = Delete
+assistant.tutorialSession.form.button.create = Create
+
+assistant.TutorialSession.form.error.too-close = The date must be at least one day in advance.
+assistant.TutorialSession.form.error.end-after-start = The end date must be after the start date.
+assistant.TutorialSession.form.error.at-least-1-hour = The session must last at least 1 hour.

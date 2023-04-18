@@ -25,6 +25,14 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-4" action="https://www.youtube.com/watch?v=JgJjypXMn9Y"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-5" action="https://www.youtube.com/watch?v=l5ixt5EuZok&t=10s"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.anonymous.peep" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.peep.list" action="/anonymous/peep/list-all"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated.peep" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.peep.list" action="/authenticated/peep/list-all"/>
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>

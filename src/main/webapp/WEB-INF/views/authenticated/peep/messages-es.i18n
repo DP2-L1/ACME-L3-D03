@@ -1,0 +1,16 @@
+authenticated.peep.list.label.instationMoment = Momento de instanciacion:
+authenticated.peep.list.label.title = Titulo:
+authenticated.peep.list.label.message = Mensaje:
+authenticated.peep.list.label.link = Link: (Opcional)
+authenticated.peep.list.label.nick = Nick:
+authenticated.peep.list.label.email = Correo: (Opcional)
+
+authenticated.peep.form.label.title = Titulo
+authenticated.peep.form.label.message = Mensaje
+authenticated.peep.form.label.link = Link
+authenticated.peep.form.label.nick = Nick
+authenticated.peep.form.label.email = Correo
+
+authenticated.peep.list.button.create = Crear
+
+authenticated.peep.form.button.create = Crear

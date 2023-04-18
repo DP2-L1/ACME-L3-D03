@@ -43,7 +43,7 @@ public class AuthenticatedPeepListAllService extends AbstractService<Authenticat
 
 		Tuple tuple;
 
-		tuple = super.unbind(object, "reference", "status");
+		tuple = super.unbind(object, "instationMoment", "title", "message", "link", "nick", "email");
 		tuple.put("title", object.getTitle());
 
 		super.getResponse().setData(tuple);

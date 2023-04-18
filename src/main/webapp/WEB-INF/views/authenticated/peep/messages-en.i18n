@@ -1,0 +1,16 @@
+authenticated.peep.list.label.instationMoment = Instation Moment:
+authenticated.peep.list.label.title = Title:
+authenticated.peep.list.label.message = Message:
+authenticated.peep.list.label.link = Link: (Optional)
+authenticated.peep.list.label.nick = Nick:
+authenticated.peep.list.label.email = Email: (Optional)
+
+authenticated.peep.form.label.title = Title
+authenticated.peep.form.label.message = Message
+authenticated.peep.form.label.link = Link (Optional)
+authenticated.peep.form.label.nick = Nick
+authenticated.peep.form.label.email = Email (Optional)
+
+authenticated.peep.list.button.create = Create
+
+authenticated.peep.form.button.create = Create

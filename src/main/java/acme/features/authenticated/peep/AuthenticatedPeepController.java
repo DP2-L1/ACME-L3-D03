@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.peep;
+package acme.features.authenticated.peep;
 
 import javax.annotation.PostConstruct;
 
@@ -7,20 +7,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import acme.entities.peep.Peep;
-import acme.framework.components.accounts.Anonymous;
+import acme.framework.components.accounts.Authenticated;
 import acme.framework.controllers.AbstractController;
 
 @Controller
-public class AnonymousPeepController extends AbstractController<Anonymous, Peep> {
+public class AuthenticatedPeepController extends AbstractController<Authenticated, Peep> {
 
 	@Autowired
-	protected AnonymousPeepShowService		showService;
+	protected AuthenticatedPeepShowService		showService;
 
 	@Autowired
-	protected AnonymousPeepListAllService	listAllService;
+	protected AuthenticatedPeepListAllService	listAllService;
 
 	@Autowired
-	protected AnonymousPeepCreateService	createService;
+	protected AuthenticatedPeepCreateService	createService;
 
 
 	@PostConstruct

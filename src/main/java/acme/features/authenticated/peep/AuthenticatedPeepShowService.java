@@ -56,7 +56,7 @@ public class AuthenticatedPeepShowService extends AbstractService<Authenticated,
 
 		Tuple tuple;
 
-		tuple = super.unbind(object, "instantiationMoment", "title", "nick", "message", "email", "link");
+		tuple = super.unbind(object, "title", "nick", "message", "email", "link");
 
 		super.getResponse().setData(tuple);
 	}

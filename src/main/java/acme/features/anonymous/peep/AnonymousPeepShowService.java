@@ -56,7 +56,7 @@ public class AnonymousPeepShowService extends AbstractService<Anonymous, Peep> {
 
 		Tuple tuple;
 
-		tuple = super.unbind(object, "instantiationMoment", "title", "nick", "message", "email", "link");
+		tuple = super.unbind(object, "title", "nick", "message", "email", "link");
 
 		super.getResponse().setData(tuple);
 	}

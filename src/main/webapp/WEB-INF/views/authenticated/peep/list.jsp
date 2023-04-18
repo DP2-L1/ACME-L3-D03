@@ -16,11 +16,11 @@
 <%@taglib prefix="acme" uri="http://www.the-acme-framework.org/"%>
 
 <acme:list>
-	<acme:list-column code="anonymous.peep.list.label.instationMoment" path="instationMoment" width="10%"/>
-	<acme:list-column code="anonymous.peep.list.label.title" path="title" width="60%"/>
-	<acme:list-column code="anonymous.peep.list.label.nick" path="nick" width="30%"/>
+	<acme:list-column code="authenticated.peep.list.label.instationMoment" path="instationMoment" width="10%"/>
+	<acme:list-column code="authenticated.peep.list.label.title" path="title" width="60%"/>
+	<acme:list-column code="authenticated.peep.list.label.nick" path="nick" width="30%"/>
 </acme:list>
 
-	<acme:button code="anonymous.peep.list.button.create" action="/anonymous/peep/create"/>	
+	<acme:button code="authenticated.peep.list.button.create" action="/authenticated/peep/create"/>	
 	
 

@@ -4,3 +4,9 @@ anonymous.peep.list.label.message = Message:
 anonymous.peep.list.label.link = Link: (Optional)
 anonymous.peep.list.label.nick = Nick:
 anonymous.peep.list.label.email = Email: (Optional)
+
+anonymous.peep.form.label.title = Title
+anonymous.peep.form.label.message = Message
+anonymous.peep.form.label.link = Link (Optional)
+anonymous.peep.form.label.nick = Nick
+anonymous.peep.form.label.email = Email (Optional)

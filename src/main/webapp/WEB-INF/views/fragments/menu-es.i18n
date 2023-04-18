@@ -25,6 +25,15 @@ master.menu.anonymous.favourite-link-3 = 15457859L: Navarro Rivera, Álvaro
 master.menu.anonymous.favourite-link-4 = 77863644L: Sánchez Naranjo, Mario
 master.menu.anonymous.favourite-link-5 = 47561989J: Martín Vergara, Jesús
 
+# master.menu.anonymous.peep #######################################################
+
+master.menu.anonymous.peep = Mensajes
+master.menu.anonymous.peep.list = Lista de mensajes
+
+# master.menu.authenticated.peep #######################################################
+master.menu.authenticated.peep = Mensajes
+master.menu.authenticated.peep.list = Lista de mensajes
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

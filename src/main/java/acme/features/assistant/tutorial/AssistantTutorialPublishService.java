@@ -77,7 +77,7 @@ public class AssistantTutorialPublishService extends AbstractService<Assistant, 
 			Tutorial existing;
 
 			existing = this.repository.findOneTutorialByCode(object.getCode());
-			super.state(existing == null, "code", "assistant.tutorial.form.error.duplicated");
+			super.state(existing == null || existing.equals(object), "code", "assistant.tutorial.form.error.duplicated");
 		}
 	}
 

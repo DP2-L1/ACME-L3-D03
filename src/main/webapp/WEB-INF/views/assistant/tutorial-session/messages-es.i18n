@@ -20,3 +20,4 @@ assistant.tutorialSession.form.button.create = Crear
 assistant.TutorialSession.form.error.too-close = la fecha debe ser mínimo con un dia de antelación
 assistant.TutorialSession.form.error.end-after-start = la fecha final debe ser despues de la inicial
 assistant.TutorialSession.form.error.at-least-1-hour = la sesión debe durar al menos 1 hora
+assistant.TutorialSession.form.error.not-more-thant-5-hours = la sesión no debe durar mas de 5 horas

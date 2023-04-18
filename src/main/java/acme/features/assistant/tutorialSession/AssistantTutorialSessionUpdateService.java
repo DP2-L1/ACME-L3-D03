@@ -75,10 +75,25 @@ public class AssistantTutorialSessionUpdateService extends AbstractService<Assis
 		}
 
 		if (!super.getBuffer().getErrors().hasErrors("endPeriod"))
-			super.state(MomentHelper.isAfter(object.getStartPeriod(), object.getEndPeriod()), "endPeriod", "assistant.TutorialSession.form.error.end-after-start");
+			super.state(MomentHelper.isAfter(object.getEndPeriod(), object.getStartPeriod()), "endPeriod", "assistant.TutorialSession.form.error.end-after-start");
 
-		if (!super.getBuffer().getErrors().hasErrors("startPeriod") && !super.getBuffer().getErrors().hasErrors("endPeriod"))
-			super.state(MomentHelper.isLongEnough(object.getStartPeriod(), object.getEndPeriod(), 1, ChronoUnit.HOURS), "startPeriod", "assistant.TutorialSession.form.error.at-least-1-hour");
+		if (!super.getBuffer().getErrors().hasErrors("endPeriod"))
+			super.state(MomentHelper.isLongEnough(object.getStartPeriod(), object.getEndPeriod(), 1, ChronoUnit.HOURS), "endPeriod", "assistant.TutorialSession.form.error.at-least-1-hour");
+
+		if (!super.getBuffer().getErrors().hasErrors("endPeriod")) {
+			long moment1;
+			long moment2;
+			long length, threshold;
+
+			moment1 = object.getStartPeriod().getTime();
+			moment2 = object.getEndPeriod().getTime();
+
+			length = moment2 - moment1;
+			threshold = 5 * ChronoUnit.HOURS.getDuration().toMillis();
+
+			super.state(Math.abs(length) <= Math.abs(threshold), "endPeriod", "assistant.TutorialSession.form.error.not-more-thant-5-hours");
+
+		}
 	}
 
 	@Override

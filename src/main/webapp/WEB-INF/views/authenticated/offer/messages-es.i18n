@@ -1,0 +1,12 @@
+authenticated.offer.list.label.instantiationMoment = Momento de instanciación
+authenticated.offer.list.label.heading = Cabecera
+authenticated.offer.list.label.price = Precio
+authenticated.offer.list.label.availabilityPeriodStart = Valido desde
+authenticated.offer.list.label.availabilityPeriodEnd = Hasta
+
+authenticated.offer.form.label.heading = Cabecera
+authenticated.offer.form.label.summary = Resumen
+authenticated.offer.form.label.availabilityPeriodStart = Valido desde
+authenticated.offer.form.label.availabilityPeriodEnd = Hasta
+authenticated.offer.form.label.price = Precio
+authenticated.offer.form.label.optionalLink = Link

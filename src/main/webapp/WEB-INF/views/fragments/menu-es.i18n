@@ -31,8 +31,14 @@ master.menu.anonymous.peep = Mensajes
 master.menu.anonymous.peep.list = Lista de mensajes
 
 # master.menu.authenticated.peep #######################################################
+
 master.menu.authenticated.peep = Mensajes
 master.menu.authenticated.peep.list = Lista de mensajes
+
+# master.menu.authenticated.peep #######################################################
+
+master.menu.authenticated.offer = Ofertas
+master.menu.authenticated.offer.list = Lista de ofertas
 
 # master.menu.administrator ###################################################
 

@@ -1,0 +1,7 @@
+authenticated.assistant.form.label.supervisor = Supervisor
+authenticated.assistant.form.label.expertise = Especialidades
+authenticated.assistant.form.label.resume = Experiencia previa
+authenticated.assistant.form.label.link = Link
+
+authenticated.assistant.form.button.create = Crear
+authenticated.assistant.form.button.update = Actualizar

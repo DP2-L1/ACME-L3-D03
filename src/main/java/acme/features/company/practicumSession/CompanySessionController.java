@@ -1,35 +1,32 @@
 
-package acme.features.company.practicum;
+package acme.features.company.practicumSession;
 
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import acme.entities.practicum.Practicum;
+import acme.entities.practicum.PracticumSession;
 import acme.framework.controllers.AbstractController;
 import acme.roles.Company;
 
 @Controller
-public class CompanyPracticumController extends AbstractController<Company, Practicum> {
-	// Internal state ---------------------------------------------------------
+public class CompanySessionController extends AbstractController<Company, PracticumSession> {
 
 	@Autowired
-	protected CompanyPracticumListService	listService;
+	private CompanySessionListService	listService;
 
 	@Autowired
-	protected CompanyPracticumShowService	showService;
+	private CompanySessionShowService	showService;
 
 	@Autowired
-	protected CompanyPracticumCreateService	createService;
+	private CompanySessionCreateService	createService;
 
 	@Autowired
-	protected CompanyPracticumUpdateService	updateService;
+	private CompanySessionUpdateService	updateService;
 
 	@Autowired
-	protected CompanyPracticumDeleteService	deleteService;
-
-	// Constructors -----------------------------------------------------------
+	private CompanySessionDeleteService	deleteService;
 
 
 	@PostConstruct

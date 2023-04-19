@@ -20,16 +20,14 @@
 	<acme:input-textbox code="company.practicum.form.label.title" path="title"/>	
 	<acme:input-textbox code="company.practicum.form.label.practicumAbstract" path="practicumAbstract"/>
 	<acme:input-textbox code="company.practicum.form.label.goals" path="goals"/>
-	<acme:input-moment code="company.practicum.form.label.estimatedTime" path="estimatedTime"/>
-	<acme:input-textbox code="company.practicum.form.label.name" path="company.name"/>
-	<acme:input-textbox code="company.practicum.form.label.coursetitle" path="course.title"/>
+	<acme:input-textbox code="company.practicum.form.label.course" path="course.title"/>
 	
 
 	<jstl:choose>	 
 		<jstl:when test="${_command == 'show'}">
-			<acme:button code="company.practicum.form.button.details" action="/company/practicum/show?masterId=${id}"/>			
+			<acme:button code="company.practicum.form.button.sessions" action="/company/practicum-session/list?masterId=${masterId}"/>			
 		</jstl:when>
-		<jstl:when test="${acme:anyOf(_command, 'update|delete|publish')}">
+		<jstl:when test="${acme:anyOf(_command, 'update|delete|publish') && draftMode == true}">
 			<acme:submit code="company.practicum.form.button.update" action="/company/practicum/update"/>
 			<acme:submit code="company.practicum.form.button.delete" action="/company/practicum/delete"/>
 			<acme:submit code="company.practicum.form.button.publish" action="/company/practicum/publish"/>

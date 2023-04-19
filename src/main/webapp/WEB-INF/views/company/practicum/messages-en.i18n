@@ -8,6 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+
 company.practicum.list.label.code = Code
 company.practicum.list.label.title = Title
 company.practicum.list.label.practicumAbstract = Abstract
@@ -16,13 +17,19 @@ company.practicum.list.label.estimatedTime = Estimated Time
 company.practicum.list.label.company = Company
 company.practicum.list.label.course = Course
 
-company.practicum.list.button.create = Create Practica
-
 #########################################################
-company.practicum.form.label.code = Code
-company.practicum.form.label.title = Title
-company.practicum.form.label.practicumAbstract = Abstract
-company.practicum.form.label.goals = Goals
-company.practicum.form.label.estimatedTime = Estimated Time
-company.practicum.form.label.name = Company
-company.practicum.form.label.coursetitle = Course
+
+company.practicum.form.label.code =Code
+company.practicum.form.label.title =Title
+company.practicum.form.label.practicumAbstract =Abstract
+company.practicum.form.label.goals =Goals
+company.practicum.form.label.estimatedTime =Estimated Time
+company.practicum.form.label.company = Company
+company.practicum.form.label.course =  Course
+
+company.practicum.form.button.sessions = Sessions 
+company.practicum.form.button.update = Update
+company.practicum.form.button.delete = Delete
+company.practicum.form.button.publish = Publish
+
+company.practicum.list.button.create = Create

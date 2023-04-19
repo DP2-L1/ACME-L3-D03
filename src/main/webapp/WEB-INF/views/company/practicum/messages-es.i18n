@@ -16,13 +16,19 @@ company.practicum.list.label.estimatedTime = Tiempo Estimado
 company.practicum.list.label.company = Compañía
 company.practicum.list.label.course = Curso
 
-company.practicum.list.button.create = Crear Practica
-
 #########################################################
-company.practicum.form.label.code = Código
-company.practicum.form.label.title = Titulo
-company.practicum.form.label.practicumAbstract = Abstracto
-company.practicum.form.label.goals = Objetivos
-company.practicum.form.label.estimatedTime = Tiempo estimado
-company.practicum.form.label.name = Compañía
-company.practicum.form.label.coursetitle = Curso
+
+company.practicum.form.label.code =Código
+company.practicum.form.label.title =Título
+company.practicum.form.label.practicumAbstract =Abstracto
+company.practicum.form.label.goals =Objetivos
+company.practicum.form.label.estimatedTime =Tiempo Estimado
+company.practicum.form.label.company = Compañía
+company.practicum.form.label.course =  Curso
+
+company.practicum.form.button.sessions = Sesiones
+company.practicum.form.button.update = Actualizar
+company.practicum.form.button.delete = Eliminar
+company.practicum.form.button.publish = Publicar
+
+company.practicum.list.button.create = Crear

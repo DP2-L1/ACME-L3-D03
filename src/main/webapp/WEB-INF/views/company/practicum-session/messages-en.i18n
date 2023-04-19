@@ -1,0 +1,37 @@
+# messages-en.i18n
+#
+# Copyright (C) 2012-2023 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+
+company.practicumsession.form.label.title= Title
+company.practicumsession.form.label.sessionAbstract= Abstract
+company.practicumsession.form.label.periodstart= Start Period
+company.practicumsession.form.label.periodend= End Period
+company.practicumsession.form.label.optionallink= Link
+company.practicumsession.form.label.practicum= Practicum
+
+company.practicumsession.form.button.update = Update
+company.practicumsession.form.button.delete = Delete
+company.practicumsession.form.button.publish =Publish
+company.practicumsession.form.button.create =Create
+
+
+#########################################################
+
+company.sessions.list.label.title= Title
+company.sessions.list.label.sessionAbstract= Abstract
+company.sessions.list.label.timePeriodStart= Start Period
+company.sessions.list.label.timePeriodEnd= End Period
+company.sessions.list.label.optionalLink= Link
+
+company.sessions.list.button.create= Create Session
+
+Company.PracticumSession.form.error.too-close = The Session must start at least one week ahead
+Company.PracticumSession.form.error.end-after-start = The end of the session must be after the start
+Company.PracticumSession.form.error.at-least-1-week = The Session must last at least one week long

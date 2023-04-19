@@ -42,6 +42,10 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shut-down" action="/administrator/shut-down"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.administrator.banner" access="hasRole('Administrator')">
+			<acme:menu-suboption code="master.menu.administrator.banner.list" action="/administrator/banner/list-all"/>
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.assistant" access="hasRole('Assistant')">
 			<acme:menu-suboption code="master.menu.assistant.tutorial-list" action="/assistant/tutorial/list-mine"/>

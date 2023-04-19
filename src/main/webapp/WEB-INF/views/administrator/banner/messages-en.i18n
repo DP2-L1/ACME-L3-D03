@@ -1,0 +1,16 @@
+administrator.banner.list.label.instantiationMoment = Instation/Update Moment
+administrator.banner.list.label.displayPeriodStart = Start
+administrator.banner.list.label.displayPeriodEnd = End
+administrator.banner.list.label.slogan = Slogan
+
+administrator.banner.list.button.create = Create
+
+administrator.banner.form.label.displayPeriodStart = Start
+administrator.banner.form.label.displayPeriodEnd = End
+administrator.banner.form.label.picture = Picture
+administrator.banner.form.label.slogan = Slogan
+administrator.banner.form.label.link = Link
+
+administrator.banner.form.label.update = Update
+administrator.banner.form.label.delete = Delete
+administrator.banner.form.label.create = Create

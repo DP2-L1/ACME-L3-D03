@@ -8,10 +8,10 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
+import org.dom4j.tree.AbstractEntity;
 import org.hibernate.validator.constraints.Length;
 
 import acme.entities.course.Course;
-import acme.framework.data.AbstractEntity;
 import acme.roles.Student;
 import lombok.Getter;
 import lombok.Setter;
@@ -39,6 +39,14 @@ public class Enrolment extends AbstractEntity {
 	@Length(max = 100)
 	@NotBlank
 	protected String goals;
+
+	protected boolean draftMode;
+
+	@Length(max = 75)
+	protected String holderName;
+
+	@Length(max = 4)
+	protected String lowerNibble;
 
 	// Derived attributes -----------------------------------------------------
 

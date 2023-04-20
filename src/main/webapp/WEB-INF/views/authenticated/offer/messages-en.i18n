@@ -1,0 +1,12 @@
+authenticated.offer.list.label.instantiationMoment = Instantiation Moment
+authenticated.offer.list.label.heading = Header
+authenticated.offer.list.label.price = Price
+authenticated.offer.list.label.availabilityPeriodStart = Available from
+authenticated.offer.list.label.availabilityPeriodEnd = To
+
+authenticated.offer.form.label.heading = Header
+authenticated.offer.form.label.summary = Summary
+authenticated.offer.form.label.availabilityPeriodStart = Available from
+authenticated.offer.form.label.availabilityPeriodEnd = To
+authenticated.offer.form.label.price = Price
+authenticated.offer.form.label.optionalLink = Link

@@ -1,0 +1,20 @@
+administrator.banner.list.label.instantiationMoment = Momento de instanciacion/actualizacion
+administrator.banner.list.label.displayPeriodStart = Inicia el
+administrator.banner.list.label.displayPeriodEnd = Finaliza el
+administrator.banner.list.label.slogan = Eslongan
+
+administrator.banner.list.button.create = Crear
+
+administrator.banner.form.label.displayPeriodStart = Inicia el
+administrator.banner.form.label.displayPeriodEnd = Finaliza el
+administrator.banner.form.label.picture = Imagen
+administrator.banner.form.label.slogan = Eslongan
+administrator.banner.form.label.link = Link
+
+administrator.banner.form.label.update = Actualizar
+administrator.banner.form.label.delete = Borrar
+administrator.banner.form.label.create = Crear
+
+administrator.peep.form.error.start-after-instantiationMoment = El inicio debe ser despues del momento de instanciacion
+administrator.peep.form.error.at-least-1-week = La promocion debe durar al menos 1 semana
+administrator.peep.form.error.end-after-start = El final debe ser despues del inicio

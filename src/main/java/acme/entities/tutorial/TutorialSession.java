@@ -41,14 +41,18 @@ public class TutorialSession extends AbstractEntity {
 
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date				duration;
+	private Date				startPeriod;
+
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				endPeriod;
 
 	@URL
 	private String				link;
 
 	@NotNull
 	@Valid
-	@ManyToOne
+	@ManyToOne(optional = false)
 	private Tutorial			tutorial;
 
 }

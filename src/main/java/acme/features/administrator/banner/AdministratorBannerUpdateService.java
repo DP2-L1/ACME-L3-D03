@@ -66,8 +66,8 @@ public class AdministratorBannerUpdateService extends AbstractService<Administra
 		if (!super.getBuffer().getErrors().hasErrors("displayPeriodEnd"))
 			super.state(MomentHelper.isLongEnough(object.getDisplayPeriodStart(), object.getDisplayPeriodEnd(), 1, ChronoUnit.WEEKS), "displayPeriodEnd", "administrator.peep.form.error.at-least-1-week");
 
-		if (!super.getBuffer().getErrors().hasErrors("endPeriod"))
-			super.state(MomentHelper.isAfter(object.getDisplayPeriodEnd(), object.getDisplayPeriodStart()), "endPeriod", "administrator.peep.form.error.end-after-start");
+		if (!super.getBuffer().getErrors().hasErrors("displayPeriodEnd"))
+			super.state(MomentHelper.isAfter(object.getDisplayPeriodEnd(), object.getDisplayPeriodStart()), "displayPeriodEnd", "administrator.peep.form.error.end-after-start");
 
 	}
 

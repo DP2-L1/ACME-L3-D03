@@ -20,11 +20,11 @@ student.enrolment.list.label.motivation = Motivation:
 student.enrolment.list.label.goals = Goals:
 student.enrolment.list.label.course = Course:
 student.enrolment.list.label.student = Student:
-
 student.enrolment.list.button.create = Create:
 
-student.enrolment.form.error.card = Credit card's format must be XXXX/XXXX/XXXX/XXXX
+student.enrolment.form.error.card = Wrong Credit card number,it should be XXXX/XXXX/XXXX/XXXX
 student.enrolment.form.error.code = Duplicated code
-student.enrolment.form.error.expiryDate = Expiry date's format must be DD/YY
-student.enrolment.form.error.cvc = CVC's format must be 3 numbers
-student.enrolment.form.error.holder = This field mustn't be empty
+student.enrolment.form.error.expiryDate = wrong Expiry date's format,it must be DD/YY
+student.enrolment.form.error.cvc = wrong CVC's format,it must be 3 numbers
+student.enrolment.form.error.holder = This field cannot be empty
+student.enrolment.form.button.activities = Activities:

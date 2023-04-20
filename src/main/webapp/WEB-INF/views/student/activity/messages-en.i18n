@@ -1,0 +1,16 @@
+student.activity.form.label.title = Title:
+student.activity.form.label.abstractActivity = Abstract Activity:
+student.activity.form.label.activityType = Activity Type:
+student.activity.form.label.startPeriod = Start Period:
+student.activity.form.label.endPeriod = End Period:
+student.activity.form.label.link = Link:
+student.activity.list.label.enrolment = Enrolment:
+
+student.activity.form.button.update = Update:
+student.activity.form.button.create = Create:
+student.activity.form.button.delete = Delete:
+
+student.activity.list.label.title = Title:
+student.activity.list.label.activityType = Activity Type:
+student.activity.list.button.create = Create:
+student.workbook.form.error.validPeriod = Start period should be before end Period

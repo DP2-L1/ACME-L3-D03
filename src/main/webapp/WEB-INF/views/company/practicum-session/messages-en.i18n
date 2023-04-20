@@ -21,7 +21,7 @@ company.practicumsession.form.button.delete = Delete
 company.practicumsession.form.button.publish =Publish
 company.practicumsession.form.button.create =Create
 
-
+company.session.form.label.confirmation = Confirmation
 #########################################################
 
 company.sessions.list.label.title= Title
@@ -29,8 +29,12 @@ company.sessions.list.label.sessionAbstract= Abstract
 company.sessions.list.label.timePeriodStart= Start Period
 company.sessions.list.label.timePeriodEnd= End Period
 company.sessions.list.label.optionalLink= Link
+company.sessions.list.label.isAddendum = Addendum?
 
 company.sessions.list.button.create= Create Session
+company.practicumsession.form.button.create-appendum = Create Appendum
+
+
 
 Company.PracticumSession.form.error.too-close = The Session must start at least one week ahead
 Company.PracticumSession.form.error.end-after-start = The end of the session must be after the start

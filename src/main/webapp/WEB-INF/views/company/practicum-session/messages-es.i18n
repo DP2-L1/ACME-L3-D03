@@ -20,7 +20,7 @@ company.practicumsession.form.button.delete = Eliminar
 company.practicumsession.form.button.publish =Publicar
 company.practicumsession.form.button.create =Crear
 
-
+company.sessions.form.label.confirmation = Confirmación
 #########################################################
 
 company.sessions.list.label.title=Título
@@ -30,6 +30,9 @@ company.sessions.list.label.timePeriodEnd=Fin de la sesión
 company.sessions.list.label.optionalLink=Link
 
 company.sessions.list.button.create=Crear sesión
+company.practicumsession.form.button.create-appendum = Crear apéndice
+company.sessions.list.label.isAddendum = Adicional?
+
 
 Company.PracticumSession.form.error.too-close = La sesión debe comenzar al menos una semana después
 Company.PracticumSession.form.error.end-after-start = El fin de la sesión debe ser posterior a su inicio

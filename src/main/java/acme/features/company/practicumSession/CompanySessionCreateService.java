@@ -1,6 +1,7 @@
 
 package acme.features.company.practicumSession;
 
+import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
@@ -28,7 +29,7 @@ public class CompanySessionCreateService extends AbstractService<Company, Practi
 	public void check() {
 		boolean status;
 
-		status = super.getRequest().hasData("masterId", int.class);
+		status = super.getRequest().hasData("id", int.class);
 
 		super.getResponse().setChecked(status);
 	}
@@ -39,7 +40,7 @@ public class CompanySessionCreateService extends AbstractService<Company, Practi
 		int masterId;
 		Practicum practicum;
 
-		masterId = super.getRequest().getData("masterId", int.class);
+		masterId = super.getRequest().getData("id", int.class);
 		practicum = this.repository.findOnePracticumById(masterId);
 		status = practicum != null && practicum.isDraftMode() && super.getRequest().getPrincipal().hasRole(practicum.getCompany());
 
@@ -54,7 +55,7 @@ public class CompanySessionCreateService extends AbstractService<Company, Practi
 		Date moment;
 
 		moment = MomentHelper.getCurrentMoment();
-		masterId = super.getRequest().getData("masterId", int.class);
+		masterId = super.getRequest().getData("id", int.class);
 		practicum = this.repository.findOnePracticumById(masterId);
 
 		object = new PracticumSession();
@@ -64,6 +65,7 @@ public class CompanySessionCreateService extends AbstractService<Company, Practi
 		object.setSessionAbstract("");
 		object.setPracticum(practicum);
 		object.setOptionalLink("");
+		object.setAddendum(false);
 
 		super.getBuffer().setData(object);
 	}
@@ -94,8 +96,19 @@ public class CompanySessionCreateService extends AbstractService<Company, Practi
 	@Override
 	public void perform(final PracticumSession object) {
 		assert object != null;
+		Duration estimatedTime;
+		Practicum practicum;
+		Integer practicumTime;
+
+		practicum = this.repository.findOnePracticumById(object.getPracticum().getId());
+		practicumTime = practicum.getEstimatedTime();
+
+		estimatedTime = MomentHelper.computeDuration(object.getTimePeriodStart(), object.getTimePeriodEnd());
+
+		practicum.setEstimatedTime((int) (practicumTime + estimatedTime.toHours()));
 
 		this.repository.save(object);
+		this.repository.save(practicum);
 	}
 
 	@Override
@@ -105,7 +118,8 @@ public class CompanySessionCreateService extends AbstractService<Company, Practi
 		Tuple tuple;
 
 		tuple = super.unbind(object, "title", "timePeriodStart", "timePeriodEnd", "sessionAbstract", "practicum", "optionalLink");
-		tuple.put("masterId", super.getRequest().getData("masterId", int.class));
+		tuple.put("id", super.getRequest().getData("id", int.class));
+		tuple.put("draftMode", object.getPracticum().isDraftMode());
 
 		super.getResponse().setData(tuple);
 	}

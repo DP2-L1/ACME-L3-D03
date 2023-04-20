@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import acme.entities.practicum.Practicum;
 import acme.entities.practicum.PracticumSession;
 import acme.framework.components.models.Tuple;
+import acme.framework.helpers.MomentHelper;
 import acme.framework.services.AbstractService;
 import acme.roles.Company;
 
@@ -66,6 +67,18 @@ public class CompanySessionDeleteService extends AbstractService<Company, Practi
 	public void perform(final PracticumSession object) {
 		assert object != null;
 
+		Integer estimatedTime;
+		Practicum practicum;
+		Integer practicumTime;
+
+		practicum = this.repository.findOnePracticumById(object.getPracticum().getId());
+		practicumTime = practicum.getEstimatedTime();
+
+		estimatedTime = (int) MomentHelper.computeDuration(object.getTimePeriodStart(), object.getTimePeriodEnd()).toHours();
+
+		practicum.setEstimatedTime(practicumTime - estimatedTime);
+		this.repository.save(practicum);
+
 		this.repository.delete(object);
 	}
 
@@ -77,6 +90,7 @@ public class CompanySessionDeleteService extends AbstractService<Company, Practi
 
 		tuple = super.unbind(object, "title", "timePeriodStart", "timePeriodEnd", "sessionAbstract", "optionalLink");
 		tuple.put("masterId", super.getRequest().getData("masterId", int.class));
+		tuple.put("draftMode", object.getPracticum().isDraftMode());
 
 		super.getResponse().setData(tuple);
 	}

@@ -65,7 +65,7 @@ public class CompanyPracticumDeleteService extends AbstractService<Company, Prac
 		int courseId;
 		Course course;
 
-		courseId = super.getRequest().getData("course", int.class);
+		courseId = super.getRequest().getData("id", int.class);
 		course = this.repository.findOneCourseById(courseId);
 
 		super.bind(object, "code", "title", "practicumAbstract", "goals", "estimatedTime", "company");

@@ -14,10 +14,13 @@ import acme.framework.services.AbstractService;
 import acme.roles.Company;
 
 @Service
-public class CompanyPracticumUpdateService extends AbstractService<Company, Practicum> {
+public class CompanyPracticumPublishService extends AbstractService<Company, Practicum> {
+	// Internal state ---------------------------------------------------------
 
 	@Autowired
 	protected CompanyPracticumRepository repository;
+
+	// AbstractService interface ----------------------------------------------
 
 
 	@Override
@@ -32,12 +35,12 @@ public class CompanyPracticumUpdateService extends AbstractService<Company, Prac
 	@Override
 	public void authorise() {
 		boolean status;
-		int masterId;
+		int jobId;
 		Practicum practicum;
 		Company company;
 
-		masterId = super.getRequest().getData("id", int.class);
-		practicum = this.repository.findOnePracticumById(masterId);
+		jobId = super.getRequest().getData("id", int.class);
+		practicum = this.repository.findOnePracticumById(jobId);
 		company = practicum == null ? null : practicum.getCompany();
 		status = practicum != null && practicum.isDraftMode() && super.getRequest().getPrincipal().hasRole(company);
 
@@ -73,17 +76,13 @@ public class CompanyPracticumUpdateService extends AbstractService<Company, Prac
 	public void validate(final Practicum object) {
 		assert object != null;
 
-		if (!super.getBuffer().getErrors().hasErrors("code")) {
-			Practicum existing;
-
-			existing = this.repository.findOnePracticumByCode(object.getCode());
-			super.state(existing == null || existing.equals(object), "code", "assistant.tutorial.form.error.duplicated");
-		}
 	}
 
 	@Override
 	public void perform(final Practicum object) {
 		assert object != null;
+
+		object.setDraftMode(false);
 		this.repository.save(object);
 	}
 
@@ -97,10 +96,10 @@ public class CompanyPracticumUpdateService extends AbstractService<Company, Prac
 		courses = this.repository.findAllCourses();
 		choices = SelectChoices.from(courses, "title", object.getCourse());
 
-		tuple = super.unbind(object, "code", "title", "practicumAbstract", "goals", "draftMode");
-
+		tuple = super.unbind(object, "code", "title", "practicumAbstract", "goals");
 		tuple.put("course", choices.getSelected().getKey());
 		tuple.put("courses", choices);
+
 		super.getResponse().setData(tuple);
 	}
 }

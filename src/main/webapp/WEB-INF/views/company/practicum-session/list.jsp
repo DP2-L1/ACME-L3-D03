@@ -18,12 +18,17 @@
 <acme:list>
 	<acme:list-column code="company.sessions.list.label.title" path="title" width="20%"/>	
 	<acme:list-column code="company.sessions.list.label.sessionAbstract" path="sessionAbstract" width="20%"/>
-	<acme:list-column code="company.sessions.list.label.timePeriodStart" path="timePeriodStart" width="20%"/>
-	<acme:list-column code="company.sessions.list.label.timePeriodEnd" path="timePeriodEnd" width="20%"/>
-	<acme:list-column code="company.sessions.list.label.optionalLink" path="optionalLink" width="20%"/>
+	<acme:list-column code="company.sessions.list.label.isAddendum" path="isAddendum" width="20%"/>
 </acme:list>	
 
-<acme:button code="company.sessions.list.button.create" action="/company/practicum-session/create?masterId=${masterId}"/>
+
 		
-	
+	<jstl:choose>	 
+		<jstl:when test="${_command == 'list' && showCreateAddendum == true}">
+			<acme:button code="company.practicumsession.form.button.create-appendum" action="/company/practicum-session/create-addendum?id=${id}"/>			
+		</jstl:when>
+		<jstl:when test="${_command == 'list' && draftMode == true}">
+			<acme:button code="company.sessions.list.button.create" action="/company/practicum-session/create?id=${id}"/>
+		</jstl:when>		
+	</jstl:choose>
 

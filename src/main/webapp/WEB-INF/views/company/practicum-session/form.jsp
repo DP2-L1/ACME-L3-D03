@@ -33,5 +33,9 @@
 		<jstl:when test="${_command == 'create'}">
 			<acme:submit code="company.practicumsession.form.button.create" action="/company/practicum-session/create?masterId=${masterId}"/>
 		</jstl:when>
+		<jstl:when test="${draftMode == false && hasAddendum == false}">
+			<acme:submit code="company.practicumsession.form.button.create-appendum" action="/company/practicum-session/create-addendum?id=${id}"/>	
+			<acme:input-checkbox code="company.session.form.label.confirmation" path="confirmation"/>		
+		</jstl:when>
 	</jstl:choose>
 </acme:form>

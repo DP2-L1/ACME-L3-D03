@@ -77,6 +77,12 @@ master.menu.lecturer.course.list.mine = List my Courses
 master.menu.lecturer.lecture.list.all = List my lectures
 master.menu.lecturer.lecture.create = Create lecture
 
+# master.menu.studentCourse ##########################################################
+
+master.menu.student = Student
+master.menu.student.studentCourseList = Course List
+master.menu.student.studentEnrolmentList = Enrolment List
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
@@ -89,4 +95,6 @@ master.menu.user-account.lecturer = Lecturer data
 master.menu.user-account.become-lecturer = Become a lecturer
 master.menu.user-account.become-assistant = Become a assistant
 master.menu.user-account.assistant = Assistant data
+master.menu.user-account.student = Student data
+master.menu.user-account.become-student = Become a student
 

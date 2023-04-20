@@ -78,6 +78,12 @@ master.menu.lecturer.course.list.mine = Listar mis Cursos
 master.menu.lecturer.lecture.list.all = Listar mis lecciones
 master.menu.lecturer.lecture.create = Crear lección
 
+# master.menu.studentCourse ##########################################################
+
+master.menu.student = Estudiante
+master.menu.student.studentCourseList = Listado de Cursos
+master.menu.student.studentEnrolmentList = Listado de matriculas
+
 # master.menu.assistant ########################################################
 
 master.menu.assistant = Asistente
@@ -95,3 +101,5 @@ master.menu.user-account.lecturer = Datos de profesor
 master.menu.user-account.become-lecturer = Hazte profesor
 master.menu.user-account.become-assistant = Hazte asistente
 master.menu.user-account.assistant = Datos de asistente
+master.menu.user-account.student = Datos de estudiante
+master.menu.user-account.become-student = Hazte estudiante

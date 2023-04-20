@@ -1,3 +1,4 @@
+
 package acme.entities.enrolment;
 
 import javax.persistence.Column;
@@ -23,22 +24,30 @@ public class Enrolment extends AbstractEntity {
 
 	// Serialisation identifier -----------------------------------------------
 
-	protected static final long serialVersionUID = 1L;
+	protected static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@NotBlank
 	@Column(unique = true)
 	@Pattern(regexp = "^[A-Z]{1,3}[0-9]{3}$")
-	protected String code;
+	protected String			code;
 
 	@Length(max = 75)
 	@NotBlank
-	protected String motivation;
+	protected String			motivation;
 
 	@Length(max = 100)
 	@NotBlank
-	protected String goals;
+	protected String			goals;
+
+	protected boolean			draftMode;
+
+	@Length(max = 75)
+	protected String			holderName;
+
+	@Length(max = 4)
+	protected String			lowerNibble;
 
 	// Derived attributes -----------------------------------------------------
 
@@ -47,11 +56,11 @@ public class Enrolment extends AbstractEntity {
 	@Valid
 	@NotNull
 	@ManyToOne(optional = false)
-	protected Student student;
+	protected Student			student;
 
 	@Valid
 	@NotNull
 	@ManyToOne(optional = false)
-	protected Course course;
+	protected Course			course;
 
 }

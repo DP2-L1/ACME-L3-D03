@@ -1,0 +1,16 @@
+student.activity.form.label.title = Título
+student.activity.form.label.abstractActivity = Resumen de la Actividad:
+student.activity.form.label.activityType = Tipo de actividad:
+student.activity.form.label.startPeriod = Inicio del Periodo:
+student.activity.form.label.endPeriod = Fin del Periodo:
+student.activity.form.label.link = Link:
+student.activity.list.label.enrolment = Matricula:
+
+student.activity.form.button.create = Crear:
+student.activity.form.button.update = Actualizar:
+student.activity.form.button.delete = Eliminar:
+
+student.activity.list.label.title = Título:
+student.activity.list.label.activityType = Tipo de actividad:
+student.activity.list.button.create = Crear:
+student.workbook.form.error.end-before-start = El periodo inicial ser anterior al final

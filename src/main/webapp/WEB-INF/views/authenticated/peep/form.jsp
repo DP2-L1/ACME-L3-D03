@@ -6,8 +6,8 @@
 
 <acme:form>
 	<acme:input-textbox code="authenticated.peep.form.label.title" path="title"/>
-	<acme:input-textbox code="authenticated.peep.form.label.message" path="message"/>
-	<acme:input-textbox code="authenticated.peep.form.label.link" path="link"/>
+	<acme:input-textarea code="authenticated.peep.form.label.message" path="message"/>
+	<acme:input-url code="authenticated.peep.form.label.link" path="link"/>
 	<acme:input-textbox code="authenticated.peep.form.label.nick" path="nick"/>
 	<acme:input-textbox code="authenticated.peep.form.label.email" path="email"/>
 	

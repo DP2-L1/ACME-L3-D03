@@ -61,7 +61,13 @@ master.menu.provider.favourite-link = Favourite link
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
-master.menu.consumer.favourite-link = Favourite link
+master.menu.consumer.favourite-link = Favourite linkç
+
+# master.menu.assistant ########################################################
+
+master.menu.assistant = Assistant
+master.menu.assistant.tutorial-list = Tutorials List
+master.menu.assistant.dashboard = Assistant Dashboard
 
 # master.menu.user-account ####################################################
 

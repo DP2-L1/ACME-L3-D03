@@ -1,0 +1,21 @@
+# messages-es.i18n
+#
+# Copyright (C) 2012-2023 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+assistant.dashboard.form.title.general-indicators = Indicadores generales
+
+assistant.dashboard.form.label.totalTutorials = Numero total de tutorias
+assistant.dashboard.form.label.averageTimeSession = Tiempo medio de una sesion
+assistant.dashboard.form.label.deviationTimeSession = 
+assistant.dashboard.form.label.minimumTimeSession = Tiempo minimo de una sesion
+assistant.dashboard.form.label.maximumTimeSession = Tiempo maximo de una sesion
+assistant.dashboard.form.label.averageTimeTutorial = Tiempo medio de un tutorial
+assistant.dashboard.form.label.deviationTimeTutorial = 
+assistant.dashboard.form.label.minimumTimeTutorial = 
+assistant.dashboard.form.label.maximumTimeTutorial =

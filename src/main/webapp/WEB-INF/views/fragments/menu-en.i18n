@@ -50,6 +50,8 @@ master.menu.lecturer = Lecturer
 master.menu.lecturer.course.create = Create Course
 master.menu.lecturer.course.list.all = List Courses
 master.menu.lecturer.course.list.mine = List my Courses
+master.menu.lecturer.lecture.list.all = List my lectures
+master.menu.lecturer.lecture.create = Create lecture
 
 # master.menu.user-account ####################################################
 

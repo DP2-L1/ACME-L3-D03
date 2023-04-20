@@ -1,6 +1,7 @@
 
 package acme.components;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -20,26 +21,33 @@ public interface BannerRepository extends AbstractRepository {
 	@Query("select b from Banner b")
 	List<Banner> findManyBannersAvailable(PageRequest pageRequest);
 
+	@Query("select b from Banner b where b.id = :id")
+	Banner findOneBannerById(int id);
+
 	default Banner findRandomBanner() {
 		Banner result;
 		int count, index;
 		ThreadLocalRandom random;
+		boolean isAvailable = false;
 		PageRequest page;
-		List<Banner> list;
+		List<Banner> list = new ArrayList<>();
+		Banner banner;
 
 		count = this.countAdvertisements();
 		if (count == 0)
 			result = null;
 		else {
-			random = ThreadLocalRandom.current();
-			index = random.nextInt(0, count);
+			while (isAvailable == false) {
+				random = ThreadLocalRandom.current();
+				index = random.nextInt(0, count);
 
-			page = PageRequest.of(index, 1);
-			list = this.findManyBannersAvailable(page);
-
+				page = PageRequest.of(index, 1);
+				list = this.findManyBannersAvailable(page);
+				banner = this.findOneBannerById(list.get(0).getId());
+				isAvailable = banner.isAvailable();
+			}
 			result = list.isEmpty() ? null : list.get(0);
 		}
-
 		return result;
 	}
 }

@@ -8,7 +8,7 @@
 	<acme:input-textbox code="anonymous.peep.form.label.title" path="title"/>
 	<acme:input-textarea code="anonymous.peep.form.label.message" path="message"/>
 	<acme:input-textbox code="anonymous.peep.form.label.link" path="link"/>
-	<acme:input-textbox code="anonymous.peep.form.label.nick" path="nick" readonly="true"/>
+	<acme:input-textbox code="anonymous.peep.form.label.nick" path="nick"/>
 	<acme:input-textbox code="anonymous.peep.form.label.email" path="email"/>
 	
 	<jstl:choose>	 

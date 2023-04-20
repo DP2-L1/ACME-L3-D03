@@ -49,6 +49,9 @@
 		
 		<acme:menu-option code="master.menu.administrator.banner" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.banner.list" action="/administrator/banner/list-all"/>
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.note.list" action="/authenticated/note/list"/>
+
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.assistant" access="hasRole('Assistant')">

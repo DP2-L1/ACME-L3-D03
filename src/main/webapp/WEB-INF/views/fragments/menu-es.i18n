@@ -54,6 +54,11 @@ master.menu.administrator.shut-down = Parar el sistema
 master.menu.administrator.banner = Promociones
 master.menu.administrator.banner.list = lista de promociones
 
+# master.menu.authenticated #######################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.note.list = Listar todas las notas
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor

@@ -10,3 +10,7 @@ anonymous.peep.form.label.message = Message
 anonymous.peep.form.label.link = Link (Optional)
 anonymous.peep.form.label.nick = Nick
 anonymous.peep.form.label.email = Email (Optional)
+
+anonymous.peep.list.button.create = Create
+
+anonymous.peep.form.button.create = Create

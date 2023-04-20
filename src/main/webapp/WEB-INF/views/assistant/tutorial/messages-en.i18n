@@ -14,6 +14,7 @@ assistant.tutorial.form.label.goals = Goals
 assistant.tutorial.form.label.estimatedTotalTime = Estimated Time
 
 assistant.tutorial.form.placeholder.score = 50
+assistant.tutorial.form.placeholder.code = The code should start with 1 to 3 uppercase letters followed by 4 digits
 assistant.tutorial.form.button.create = Create
 
 assistant.tutorial.form.button.sessions = Sessions

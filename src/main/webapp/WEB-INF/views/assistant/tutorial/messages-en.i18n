@@ -1,0 +1,24 @@
+assistant.tutorial.list.label.code = Code:
+assistant.tutorial.list.label.title = Title:
+assistant.tutorial.list.label.abstractText = Abstract Text:
+assistant.tutorial.list.label.goals = Goals:
+assistant.tutorial.list.label.estimatedTotalTime = Estimate Time:
+
+assistant.tutorial.list.button.create = Create
+
+assistant.tutorial.form.label.code = Code
+assistant.tutorial.form.label.course = Course
+assistant.tutorial.form.label.title = Title
+assistant.tutorial.form.label.abstractText = Text
+assistant.tutorial.form.label.goals = Goals
+assistant.tutorial.form.label.estimatedTotalTime = Estimated Time
+
+assistant.tutorial.form.placeholder.score = 50
+assistant.tutorial.form.button.create = Create
+
+assistant.tutorial.form.button.sessions = Sessions
+assistant.tutorial.form.button.update = Update
+assistant.tutorial.form.button.delete = Delete
+assistant.tutorial.form.button.publish = Publish
+
+assistant.tutorial.form.error.duplicated = This code is taken

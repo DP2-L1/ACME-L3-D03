@@ -25,6 +25,20 @@ master.menu.anonymous.favourite-link-3 = 15457859L: Navarro Rivera, Álvaro
 master.menu.anonymous.favourite-link-4 = 77863644L: Sánchez Naranjo, Mario
 master.menu.anonymous.favourite-link-5 = 47561989J: Martín Vergara, Jesús
 
+# master.menu.anonymous.peep #######################################################
+
+master.menu.anonymous.peep = Messages
+master.menu.anonymous.peep.list = List of messages
+
+# master.menu.authenticated.peep #######################################################
+master.menu.authenticated.peep = Messages
+master.menu.authenticated.peep.list = List of messagess
+
+# master.menu.authenticated.peep #######################################################
+
+master.menu.authenticated.offer = Offers
+master.menu.authenticated.offer.list = List of offers
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
@@ -34,6 +48,11 @@ master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shut-down = Shut down
 master.menu.administrator.configuration = Show system configuration
+
+# master.menu.administrator.banner ###################################################
+
+master.menu.administrator.banner = Promociones
+master.menu.administrator.banner.list = lista de promociones
 
 # master.menu.provider ########################################################
 
@@ -45,6 +64,15 @@ master.menu.provider.favourite-link = Favourite link
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
 
+# master.menu.lecturer ##########################################################
+
+master.menu.lecturer = Lecturer
+master.menu.lecturer.course.create = Create Course
+master.menu.lecturer.course.list.all = List Courses
+master.menu.lecturer.course.list.mine = List my Courses
+master.menu.lecturer.lecture.list.all = List my lectures
+master.menu.lecturer.lecture.create = Create lecture
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
@@ -53,3 +81,8 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.lecturer = Lecturer data
+master.menu.user-account.become-lecturer = Become a lecturer
+master.menu.user-account.become-assistant = Become a assistant
+master.menu.user-account.assistant = Assistant data
+

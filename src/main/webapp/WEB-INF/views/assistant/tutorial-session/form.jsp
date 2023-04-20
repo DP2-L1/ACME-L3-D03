@@ -5,7 +5,7 @@
 
 <acme:form> 
 	<acme:input-textbox code="assistant.tutorialSession.form.label.title" path="title"/>
-	<acme:input-textbox code="assistant.tutorialSession.form.label.abstractText" path="abstractText"/>	
+	<acme:input-textarea code="assistant.tutorialSession.form.label.abstractText" path="abstractText"/>	
 	<acme:input-moment code="assistant.tutorialSession.form.label.startPeriod" path="startPeriod"/>
 	<acme:input-moment code="assistant.tutorialSession.form.label.endPeriod" path="endPeriod"/>
 	<acme:input-select code="assistant.tutorialSession.form.label.sessionType" path="sessionType" choices="${sessionType}"/>

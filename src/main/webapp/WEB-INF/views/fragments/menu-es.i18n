@@ -18,27 +18,26 @@ master.menu.sign-out = Salir
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
-master.menu.anonymous.favourite-link = Enlace favorito
-master.menu.anonymous.favourite-link-1 = 45339031M:Warleta Murcia, Ignacio
-master.menu.anonymous.favourite-link-2 = 77940667:Vacaro Goytia, Gabriel
+master.menu.anonymous.favourite-link-1 = 45339031M: Warleta Murcia, Ignacio
+master.menu.anonymous.favourite-link-2 = 77940667: Vacaro Goytia, Gabriel
 master.menu.anonymous.favourite-link-3 = 15457859L: Navarro Rivera, Álvaro
 master.menu.anonymous.favourite-link-4 = 77863644L: Sánchez Naranjo, Mario
 master.menu.anonymous.favourite-link-5 = 47561989J: Martín Vergara, Jesús
 
 # master.menu.anonymous.peep #######################################################
 
-master.menu.anonymous.peep = Mensajes
-master.menu.anonymous.peep.list = Lista de mensajes
+master.menu.anonymous.peep = Peep
+master.menu.anonymous.peep.list = Lista de Peeps
 
 # master.menu.authenticated.peep #######################################################
 
-master.menu.authenticated.peep = Mensajes
-master.menu.authenticated.peep.list = Lista de mensajes
+master.menu.authenticated.peep = Peep
+master.menu.authenticated.peep.list = Lista de Peeps
 
-# master.menu.authenticated.peep #######################################################
+# master.menu.authenticated.offer #######################################################
 
-master.menu.authenticated.offer = Ofertas
-master.menu.authenticated.offer.list = Lista de ofertas
+master.menu.authenticated.offer = Offer
+master.menu.authenticated.offer.list = Lista de offers
 
 # master.menu.administrator ###################################################
 
@@ -52,7 +51,7 @@ master.menu.administrator.shut-down = Parar el sistema
 # master.menu.administrator.banner ###################################################
 
 master.menu.administrator.banner = Promociones
-master.menu.administrator.banner.list = lista de promociones
+master.menu.administrator.banner.list = lista de banners
 
 # master.menu.authenticated #######################################################
 
@@ -80,8 +79,8 @@ master.menu.lecturer.lecture.create = Crear lección
 
 # master.menu.assistant ########################################################
 
-master.menu.assistant = Asistente
-master.menu.assistant.tutorial-list = Lista de mis tutoriales
+master.menu.assistant = Assistant
+master.menu.assistant.tutorial-list = Lista de mis tutorials
 
 # master.menu.user-account ####################################################
 

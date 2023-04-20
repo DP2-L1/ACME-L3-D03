@@ -4,7 +4,6 @@
 <%@taglib prefix="acme" uri="http://www.the-acme-framework.org/"%>
 
 <acme:form>
-	<acme:input-moment code="authenticated.note.form.label.instantiationMoment" path="instantiationMoment" readonly="true"/>
 	<acme:input-textbox code="authenticated.note.form.label.title" path="title"/>
 	<acme:input-textbox code="authenticated.note.form.label.author" path="author" readonly="true"/>
 	<acme:input-textbox code="authenticated.note.form.label.message" path="message"/>

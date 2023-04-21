@@ -1,17 +1,14 @@
 
 package acme.entities.practicum;
 
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import javax.validation.constraints.PositiveOrZero;
 
 import org.hibernate.validator.constraints.Length;
 
@@ -48,8 +45,13 @@ public class Practicum extends AbstractEntity {
 	@Length(min = 0, max = 101)
 	protected String			goals;
 
-	@Temporal(value = TemporalType.TIME)
-	protected Date				estimatedTime;
+	@NotNull
+	@PositiveOrZero
+	Integer						estimatedTime;
+
+	protected boolean			draftMode;
+
+	protected boolean			hasAddendum;
 
 	@ManyToOne(optional = false)
 	@Valid

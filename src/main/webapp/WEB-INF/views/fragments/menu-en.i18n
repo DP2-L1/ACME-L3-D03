@@ -24,6 +24,9 @@ master.menu.anonymous.favourite-link-3 = 15457859L: Navarro Rivera, Álvaro
 master.menu.anonymous.favourite-link-4 = 77863644L: Sánchez Naranjo, Mario
 master.menu.anonymous.favourite-link-5 = 47561989J: Martín Vergara, Jesús
 
+
+master.menu.anonymous.become-company = Become a Company
+
 # master.menu.anonymous.peep #######################################################
 
 master.menu.anonymous.peep = Peep
@@ -38,6 +41,7 @@ master.menu.authenticated.peep.list = List of Peeps
 
 master.menu.authenticated.offer = Offers
 master.menu.authenticated.offer.list = List of offers
+
 
 # master.menu.administrator ###################################################
 
@@ -90,6 +94,18 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+
+
+# master.menu.authenticated ####################################################
+
+master.menu.authenticated = Authenticated
+master.menu.authenticated.practicums = List all Practicums by Course
+
+# master.menu.company ####################################################
+master.menu.company = Company
+master.menu.company.practicum.list = List my Practica
+master.menu.company.update-info = Update Profile
+
 master.menu.user-account.lecturer = Lecturer data
 master.menu.user-account.become-lecturer = Become a lecturer
 master.menu.user-account.become-assistant = Become a assistant

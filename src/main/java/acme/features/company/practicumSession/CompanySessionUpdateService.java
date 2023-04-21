@@ -92,7 +92,7 @@ public class CompanySessionUpdateService extends AbstractService<Company, Practi
 
 		estimatedTime = (int) (MomentHelper.computeDuration(sessionBefore.getTimePeriodStart(), sessionBefore.getTimePeriodEnd()).toHours() - MomentHelper.computeDuration(object.getTimePeriodStart(), object.getTimePeriodEnd()).toHours());
 
-		practicum.setEstimatedTime(practicumTime - estimatedTime);
+		practicum.setEstimatedTime((int) (practicumTime - 0.9 * estimatedTime));
 
 		this.repository.save(practicum);
 		this.repository.save(object);

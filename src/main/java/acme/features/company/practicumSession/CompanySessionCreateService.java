@@ -105,7 +105,7 @@ public class CompanySessionCreateService extends AbstractService<Company, Practi
 
 		estimatedTime = MomentHelper.computeDuration(object.getTimePeriodStart(), object.getTimePeriodEnd());
 
-		practicum.setEstimatedTime((int) (practicumTime + estimatedTime.toHours()));
+		practicum.setEstimatedTime((int) (practicumTime + 0.9 * estimatedTime.toHours()));
 
 		this.repository.save(object);
 		this.repository.save(practicum);

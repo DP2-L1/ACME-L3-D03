@@ -109,7 +109,7 @@ public class CompanySessionCreateAdddendumService extends AbstractService<Compan
 
 		estimatedTime = MomentHelper.computeDuration(object.getTimePeriodStart(), object.getTimePeriodEnd());
 
-		practicum.setEstimatedTime((int) (practicumTime + estimatedTime.toHours()));
+		practicum.setEstimatedTime((int) (practicumTime + 0.9 * estimatedTime.toHours()));
 
 		practicum.setHasAddendum(true);
 		object.setAddendum(true);

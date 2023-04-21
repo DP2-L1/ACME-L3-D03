@@ -6,6 +6,7 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
@@ -14,6 +15,7 @@ import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.data.AbstractEntity;
+import acme.framework.helpers.MomentHelper;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,24 +29,42 @@ public class Banner extends AbstractEntity {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
 	@NotNull
-	private Date				instantiationMoment;
+	protected Date				instantiationMoment;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
-	private Date				displayPeriodStart;
+	protected Date				displayPeriodStart;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
-	private Date				displayPeriodEnd;
+	protected Date				displayPeriodEnd;
 
 	@URL
-	private String				picture;
+	protected String			picture;
 
 	@NotBlank
 	@Size(max = 76)
-	private String				slogan;
+	protected String			slogan;
 
 	@URL
-	private String				link;
+	protected String			link;
+
+
+	@Transient
+	public boolean isAvailable() {
+		final boolean result;
+		Date moment;
+		boolean isAfter;
+		boolean isBefore;
+
+		moment = MomentHelper.getCurrentMoment();
+
+		isAfter = MomentHelper.isAfter(moment, this.displayPeriodStart);
+		isBefore = MomentHelper.isBefore(moment, this.displayPeriodEnd);
+
+		result = isAfter && isBefore;
+
+		return result;
+	}
 
 }

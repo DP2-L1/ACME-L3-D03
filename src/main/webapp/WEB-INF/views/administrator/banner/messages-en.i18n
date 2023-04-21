@@ -1,0 +1,20 @@
+administrator.banner.list.label.instantiationMoment = Instation/Update Moment
+administrator.banner.list.label.displayPeriodStart = Start
+administrator.banner.list.label.displayPeriodEnd = End
+administrator.banner.list.label.slogan = Slogan
+
+administrator.banner.list.button.create = Create
+
+administrator.banner.form.label.displayPeriodStart = Start
+administrator.banner.form.label.displayPeriodEnd = End
+administrator.banner.form.label.picture = Picture
+administrator.banner.form.label.slogan = Slogan
+administrator.banner.form.label.link = Link
+
+administrator.banner.form.label.update = Update
+administrator.banner.form.label.delete = Delete
+administrator.banner.form.label.create = Create
+
+administrator.peep.form.error.start-after-instantiationMoment = The start should be after the moment of instantiation.
+administrator.peep.form.error.at-least-1-week = The banner should last at least 1 week.
+administrator.peep.form.error.end-after-start = The end should be after the start.

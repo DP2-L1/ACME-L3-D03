@@ -25,6 +25,8 @@ master.menu.anonymous.favourite-link-3 = 15457859L: Navarro Rivera, Álvaro
 master.menu.anonymous.favourite-link-4 = 77863644L: Sánchez Naranjo, Mario
 master.menu.anonymous.favourite-link-5 = 47561989J: Martín Vergara, Jesús
 
+master.menu.anonymous.become-company = Become a Company
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
@@ -61,4 +63,5 @@ master.menu.authenticated.practicums = List all Practicums by Course
 # master.menu.company ####################################################
 master.menu.company = Company
 master.menu.company.practicum.list = List my Practica
+master.menu.company.update-info = Update Profile
 

@@ -18,10 +18,6 @@
 <acme:list>
 	<acme:list-column code="company.practicum.list.label.code" path="code" width="10%"/>
 	<acme:list-column code="company.practicum.list.label.title" path="title" width="10%"/>
-	<acme:list-column code="company.practicum.list.label.practicumAbstract" path="practicumAbstract" width="80%"/>
-	<acme:list-column code="company.practicum.list.label.goals" path="goals" width="10%"/>
-	<acme:list-column code="company.practicum.list.label.estimatedTime" path="estimatedTime" width="10%"/>
-	<acme:list-column code="company.practicum.list.label.company" path="company.name" width="10%"/>	
 	<acme:list-column code="company.practicum.list.label.course" path="course.title" width="10%"/>	
 </acme:list>
 

@@ -21,6 +21,7 @@
 	<acme:input-textbox code="company.practicum.form.label.practicumAbstract" path="practicumAbstract"/>
 	<acme:input-textbox code="company.practicum.form.label.goals" path="goals"/>
 	<acme:input-select code="company.practicum.form.label.course" path="course" choices="${courses}"/>
+	<acme:input-textbox code="company.practicum.form.label.estimatedTime" path="estimatedTime" readonly= "true"/>
 	
 
 	<jstl:choose>	 

@@ -45,6 +45,9 @@ public class PracticumSession extends AbstractEntity {
 
 	protected String			optionalLink;
 
+	@NotNull
+	protected boolean			isAddendum;
+
 	@ManyToOne(optional = false)
 	@Valid
 	@NotNull

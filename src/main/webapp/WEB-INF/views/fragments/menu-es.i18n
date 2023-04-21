@@ -8,7 +8,7 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-﻿# master.menu #################################################################
+# master.menu #################################################################
 
 master.menu.home = Inicio
 master.menu.sign-up = Registrarse
@@ -24,6 +24,9 @@ master.menu.anonymous.favourite-link-3 = 15457859L: Navarro Rivera, Álvaro
 master.menu.anonymous.favourite-link-4 = 77863644L: Sánchez Naranjo, Mario
 master.menu.anonymous.favourite-link-5 = 47561989J: Martín Vergara, Jesús
 
+
+master.menu.anonymous.become-company = Crea una compañía
+
 # master.menu.anonymous.peep #######################################################
 
 master.menu.anonymous.peep = Peep
@@ -38,6 +41,7 @@ master.menu.authenticated.peep.list = Lista de Peeps
 
 master.menu.authenticated.offer = Offer
 master.menu.authenticated.offer.list = Lista de offers
+
 
 # master.menu.administrator ###################################################
 
@@ -90,7 +94,20 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+
+
+# master.menu.authenticated ####################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.practicums = Listado de prácticas por curso
+
+# master.menu.company ####################################################
+master.menu.company = Compañía
+master.menu.company.practicum.list = Listado de mis prácticas
+master.menu.company.update-info = Actualizar perfil
+
 master.menu.user-account.lecturer = Datos de profesor
 master.menu.user-account.become-lecturer = Hazte profesor
 master.menu.user-account.become-assistant = Hazte asistente
 master.menu.user-account.assistant = Datos de asistente
+

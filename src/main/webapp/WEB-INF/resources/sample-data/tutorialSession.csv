@@ -1,0 +1,12 @@
+key,title,abstractText,sessionType,startPeriod,endPeriod,link,key:tutorial
+TutorialSession-01,first session,Introduction,THEORY,2023/03/15 14:15,2023/03/15 15:20,null,tutorial-01
+TutorialSession-02,second session,First Lesson,HANDS_ON,2023/03/16 17:24,2023/03/16 18:24,null,tutorial-01
+TutorialSession-03,New session,Next Lesson,HANDS_ON,2023/03/20 12:20,2023/03/20 14:20,https://www.youtube.com/,tutorial-02
+TutorialSession-04,????????,Vamos con la 4,THEORY,2023/09/20 11:00,2023/09/20 13:20,https://twitter.com/,tutorial-01
+TutorialSession-05,Whatshap premium,Como conseguir whatshap premium,HANDS_ON,2023/012/10 12:20,2023/012/10 15:12,null,tutorial-03
+TutorialSession-06,Supernova,Saiko????,THEORY,2023/02/20 17:20,2023/02/20 19:40,https://www.youtube.com/,tutorial-02
+TutorialSession-07,Classy,Vamos a ver el tutorial,HANDS_ON,2023/01/20 12:20,2023/01/20 14:20,https://www.youtube.com/,tutorial-04
+TutorialSession-08,Salvatore,Viaje a Italia,HANDS_ON,2023/02/04 16:20,2023/02/04 17:20,https://www.youtube.com/,tutorial-01
+TutorialSession-09,Vendedor de moviles,Como vender los mejores moviles,THEORY,2023/05/30 09:00,2023/05/30 10:20,https://www.youtube.com/,tutorial-05
+TutorialSession-010,??????,????????,HANDS_ON,2023/06/14 12:20,2023/06/20 14:20,https://www.youtube.com/,tutorial-02
+TutorialSession-011,☺	☻	♥	♦	♣	♠	•	◘	○,Prueba de emoticonos,THEORY,2023/03/20 20:20,2023/03/20 23:02,https://www.youtube.com/,tutorial-02

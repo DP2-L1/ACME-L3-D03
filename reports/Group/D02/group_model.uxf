@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text>// Uncomment the following line to change the fontsize and font:
+// fontsize=14
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use +/- or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+</help_text>
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>465</x>
+      <y>175</y>
+      <w>255</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Banner
+bg=green
+--
++ instationMoment: Date {NotNull, Past, Temporal(TemporalType.TIMESTAMP)}
++ displayPeriodStart: Date {NotNull, Temporal(TemporalType.TIMESTAMP)}
++ displayPeriodEnd: Date {NotNull, Temporal(TemporalType.TIMESTAMP)}
++ imgLink: String {NotBlank, URL}
++ slogan: String {NotBlank, Length(max=75)}
++ Link: String {NotBlank, URL}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>755</x>
+      <y>90</y>
+      <w>110</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Provider
+bg=green
+--
++ company: String {NotBlank}
++ sector: String {NotBlank}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>885</x>
+      <y>90</y>
+      <w>110</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Consumer
+bg=green
+--
++ company: String {NotBlank}
++ sector: String {NotBlank}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>175</y>
+      <w>265</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Bulletin
+bg=green
+--
++ moment: Date {NotNull, Past, Temporal(TemporalType.TIMESTAMP)}
++ title: String {NotBlank, Length(max=75)}
++ message: String {NotBlank, Length(max=100)}
++ critical: Boolean {NotNull}
++ link: String {URL}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>465</x>
+      <y>265</y>
+      <w>305</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Offer
+bg=green
+--
++ instantiationMoment: Date {NotNull, Past, Temporal(TemporalType.TIMESTAMP)}
++ heading: String {NotBlank, Length(max=75)}
++ summary: String {NotBlank, Length(max=100)}
++ price: Money {NotNull}
++ availabilityPeriodStart: Date {NotNull,Temporal(TemporalType.TIMESTAMP}
++ availabilityPeriodEnd: Date {NotNull,Temporal(TemporalType.TIMESTAMP}
++ link: String {URL}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>465</x>
+      <y>90</y>
+      <w>265</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Peep
+bg=green
+--
++ moment: Date {NotNull, Past, Temporal(TemporalType.TIMESTAMP)}
++ title: String {NotBlank, Length(max=75)}
++ nick: String {NotBlank, Length(max=75)}
++ message: String {NotBlank, Length(max=100)}
++ link: String {URL}
++ email: String {Email}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>265</y>
+      <w>215</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Configuration
+bg=green
+--
++ defaultCurrency: String {NotBlank, Pattern(regexp = "^[A-Z]{3}$")}
++ acceptedCurrencies: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>465</x>
+      <y>365</y>
+      <w>300</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Note
+bg=green
+--
++ instantiationMoment: Date {NotNull, Past, Temporal(TemporalType.TIMESTAMP)}
++ title: String {NotBlank, Length(max=75)}
++ author: String {NotBlank, Length(max=75)}
++ message: String {NotBlank, Length(max=100)}
++ emailAddress: String {Email}
++ link: String {URL}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>325</x>
+      <y>275</y>
+      <w>110</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>AvaibilityPeriodStart debe
+ser al menos un dia
+despues del instantiationMoment
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>290</y>
+      <w>45</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>325</x>
+      <y>320</y>
+      <w>110</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Debe haber minimo una semana
+de diferencia entre 
+availabilityPeriodStart
+y availabilityPeriodEnd
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>325</y>
+      <w>45</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;30.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>325</x>
+      <y>375</y>
+      <w>125</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>El autor debe seguir la siguiente
+pauta &lt;username&gt;-&lt;surname,name&gt;
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>445</x>
+      <y>390</y>
+      <w>30</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>325</x>
+      <y>205</y>
+      <w>110</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Debe haber minimo una semana
+de diferencia entre 
+displayPeriodStart
+y displayPeriodEnd
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>325</x>
+      <y>165</y>
+      <w>110</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>DisplayPeriodStart debe
+ser instanciarse despues de
+instationMoment
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>210</y>
+      <w>45</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;40.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>180</y>
+      <w>45</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>790</x>
+      <y>320</y>
+      <w>165</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Form&gt;&gt;
+AdministratorDashboard
+bg=green
+--
++ totalCompanies: Integer
++ totalAssistants: Integer
++ totalAuditors: Integer
++ totalLecturers: Integer
++ totalConsumers: Integer
++ totalProviders: Integer
++ ratioLinkAndEmail: Double
++ ratioCriticalBulletins: Double
++ ratioNonCriticalBulletins: Double
++ avgBudgetByCurrency: Map&lt;String, Double&gt;
++ minBudgetByCurrency: Map&lt;String, Double&gt;
++ maxBudgetByCurrency: Map&lt;String, Double&gt;
++ devBudgetByCurrency: Map&lt;String, Double&gt;
++ avgLast10WeeksNotes: Double
++ minLast10WeeksNotes: Double
++ maxLast10WeeksNotes: Double
++ devLast10WeeksNotes: Double</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,7 @@
+key,code,title,abstractText,goals,estimatedTotalTime,draft-mode,key:assistant,key:course
+tutorial-01,CKL1367,How to code,A tutorial about how to code,Learning the basics for programming,30,false,assistant-01,course-01
+tutorial-02,AF2524,Methodology,Basics,Know the basics of the methodology,20,true,assistant-02,course-03
+tutorial-03,ABC2453,Nice Work,So nice work,Celebrate the Work???,60,false,assistant-01,course-02
+tutorial-04,A2345,Aprende a contar,?????,?????,50,true,assistant-01,course-01
+tutorial-05,XC2353,???????,Cocina con Jose,Aprende a cocinar con jose,8000,false,assistant-02,course-04
+tutorial-06,XF3452,Prueba este turorial,Tutorial increible,No fallar,600,false,assistant-01,course-05

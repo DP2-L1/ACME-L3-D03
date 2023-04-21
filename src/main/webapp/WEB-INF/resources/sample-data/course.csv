@@ -1,0 +1,25 @@
+key,code,title,course-abstract,course-type,retail-price,link,estimated-total-time,draft-mode,key:lecturer
+course-01,WW777,Esto es un titulo,это реферат,THEORY_COURSE,EUR 20.00,https://www.estoesunlink.com,10,true,lecturer-01
+course-02,AW211,Este texto presentado  podría  servir como  ejemplo de titulo 75 caracteres,"En   esta   clase   presentaremos   la  asignatura. Además, esta cadena cuenta   con 100 caracteres.",HANDS_ON,USD 35.25,https://www.estoesunlink.com,10,true,lecturer-02
+course-03,TY533,☺	☻	♥	♦	♣	♠	•	◘	○,"En   esta   clase   presentaremos   la  asignatura. Además, esta cadena cuenta   con 100 caracteres.",THEORY_COURSE,GBP 28.50,https://www.estoesunlink.com,10,true,lecturer-01
+course-04,FSG456,75자라 는 엄청난   양의   타이틀입니다.         구글     번역기   도구를 사용하여    한국어로      번역됩니다.,"En   esta   clase   presentaremos   la  asignatura. Además, esta cadena cuenta   con 100 caracteres.",HANDS_ON,THB 12345.67,https://www.estoesunlink.com,5,true,lecturer-01
+course-05,G563,Titulo,"En   esta   clase   presentaremos   la  asignatura. Además, esta cadena cuenta   con 100 caracteres.",THEORY_COURSE,BGP 1234.56,,7,true,lecturer-01
+course-06,GR432,[Inserte un titulo],"En   esta   clase   presentaremos   la  asignatura. Además, esta cadena cuenta   con 100 caracteres.",HANDS_ON,USD 47.90,,7,true,lecturer-01
+course-07,BNH678,これはタイトルです。やあやあ,"En   esta   clase   presentaremos   la  asignatura. Además, esta cadena cuenta   con 100 caracteres.",THEORY_COURSE,EUR 17.80,,7,true,lecturer-02
+course-08,VBV434,привет привет товарищ,{Inserte Texto},HANDS_ON,CAD 99.99,,7,true,lecturer-01
+course-09,G234,E,{Inserte Texto},THEORY_COURSE,GBP 12.75,https://www.estoesunlink.com,7,true,lecturer-02
+course-10,L987,{テキストを挿入},{Inserte Texto},HANDS_ON,USD 29.50,https://www.estoesunlink.com,7,true,lecturer-01
+course-11,G098,{テキストを挿入},{テキストを挿入},THEORY_COURSE,THB 8499.99,https://www.estoesunlink.com,7,true,lecturer-02
+course-12,JB007,Esto es un titulo,{テキストを挿入},HANDS_ON,EUR 43.75,https://www.estoesunlink.com,7,true,lecturer-01
+course-13,JB008,Esto es un titulo,{テキストを挿入},THEORY_COURSE,CAD 22.90,,7,true,lecturer-02
+course-14,JB099,<title>Titulo1</title>,{テキストを挿入},HANDS_ON,USD 77.25,,7,true,lecturer-01
+course-15,GTA005,Esto es un titulo,{テキストを挿入},THEORY_COURSE,GBP 31.50,,7,true,lecturer-01
+course-16,VJR020,Esto es un titulo,V,HANDS_ON,BGP 2345.60,https://www.estoesunlink.com,7,true,lecturer-02
+course-17,CR007,Esto es un titulo,{Вставить текст},THEORY_COURSE,EUR 15.25,,7,true,lecturer-01
+course-18,RM014,Esto es un titulo,{Вставить текст},HANDS_ON,USD 62.80,,7,true,lecturer-01
+course-19,GWR435,Esto es un titulo,{Вставить текст},THEORY_COURSE,CAD 11.00,,7,true,lecturer-01
+course-20,BYM802,Esto es un titulo,{Вставить текст},HANDS_ON,THB 1999.99,,7,true,lecturer-02
+course-21,BAR452,Esta cadena de  50 caracteres funciona como titulo,{Вставить текст},THEORY_COURSE,EUR 15.25,https://www.estoesunlink.com,7,true,lecturer-02
+course-22,F351,Esta cadena de  50 caracteres funciona como titulo,{Inserte Texto},HANDS_ON,THB 999.20,https://www.estoesunlink.com,7,true,lecturer-02
+course-23,CD345,Esta cadena de  50 caracteres funciona como titulo,{Inserte Texto},THEORY_COURSE,CAD 15.00,https://www.estoesunlink.com,7,true,lecturer-01
+course-24,QWE123,Esta cadena de  50 caracteres funciona como titulo,{Inserte Texto},HANDS_ON,USD 23.60,,7,true,lecturer-01

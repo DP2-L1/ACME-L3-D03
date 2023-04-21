@@ -1,13 +1,11 @@
 
 package acme.entities.peep;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.Valid;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -15,9 +13,7 @@ import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
-import org.springframework.security.core.userdetails.User;
 
-import acme.framework.components.accounts.Administrator;
 import acme.framework.data.AbstractEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -34,6 +30,7 @@ public class Peep extends AbstractEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
+	@NotNull
 	private Date				instationMoment;
 
 	@NotBlank
@@ -53,14 +50,4 @@ public class Peep extends AbstractEntity {
 
 	@Email
 	private String				email;
-
-	@NotNull
-	@Valid
-	@ManyToOne
-	private User				user;
-
-	@NotNull
-	@Valid
-	@ManyToOne
-	private Administrator		administrator;
 }

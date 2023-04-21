@@ -1,0 +1,29 @@
+key,title,lecture-abstract,start-period,end-period,body,lecture-type,link,draft-mode,key:lecturer
+lecture-01,Titulo1,En esta clase presentaremos la asignatura.,2022/06/11 09:00,2022/06/11 11:00,Presentación de la asignatura.,THEORETICAL,https://www.estoesunlink.com,false,lecturer-01
+lecture-02,Este texto presentado  podría  servir como  ejemplo de titulo 75 caracteres,En esta clase presentaremos la asignatura.,2022/06/11 09:00,2022/01/02 11:00,"Esta cadena de   texto   cuenta   con  nada mas ni nada menos que 100 caracteres, impresionante ¿no?",THEORETICAL,https://www.estoesunlink.com,false,lecturer-01
+lecture-03,☺	☻	♥	♦	♣	♠	•	◘	○,En esta clase presentaremos la asignatura.,2022/07/17 19:00,2022/07/17 21:00,Introducción a la termidonamica tubular.,HANDS_ON,,false,lecturer-01
+lecture-04,Esto es un titulo,En esta clase impartiremos el tema 1,2022/06/11 10:00,2022/06/11 12:00,Fundamentos de estafa.,THEORETICAL,https://www.estoesunlink.com,false,lecturer-01
+lecture-05,乔普,在这节课中，我们将教授主题 2,2022/06/11 10:00,2022/06/11 11:00,Charla sobre multitasking impartida por Paco Sanz,HANDS_ON,https://www.estoesunlink.com,false,lecturer-01
+lecture-06,[Inserte Titulo],En esta clase impartiremos el tema 2,2022/06/11 10:00,2022/06/11 12:00,Introduccion al fraude,HANDS_ON,https://www.estoesunlink.com,false,lecturer-01
+lecture-07,75자라 는 엄청난   양의   타이틀입니다.         구글     번역기   도구를 사용하여    한국어로      번역됩니다.,이 수업에서 우리는 주제 3을 가르칠 것입니다.,2022/01/05 09:00,2022/01/05 11:00,Fundamentos de evasion de impuestos,THEORETICAL,https://www.estoesunlink.com,false,lecturer-01
+lecture-08,Titulo2,이 수업에서 우리는 주제 3을 가르칠 것입니다.,2022/01/01 09:00,2022/01/01 11:00,Esta cadena de    texto   cuenta con 50 caracteres,THEORETICAL,https://www.estoesunlink.com,false,lecturer-01
+lecture-09,I,W,2022/01/02 09:00,2022/01/02 11:00,Fundamentos de evasion de impuestos,HANDS_ON,,false,lecturer-01
+lecture-10,Este texto presentado  podría  servir como  ejemplo de titulo 75 caracteres,En esta clase impartiremos el tema 4,2022/02/22 18:00,2022/02/22 19:00,Introducción a la termidonamica tubular.,HANDS_ON,https://www.estoesunlink.com,false,lecturer-01
+lecture-11,Titulo3,"En   esta   clase   presentaremos   la  asignatura. Además, esta cadena cuenta   con 100 caracteres.",2022/06/11 10:00,2022/06/11 12:00,Desarrollo de manipulacion,THEORETICAL,https://www.estoesunlink.com,false,lecturer-01
+lecture-12,<h1>Insertar titulo</h1>,En esta clase impartiremos el tema 5,2022/06/11 10:00,2022/06/11 12:00,Introduccion a la etica kantiana 4,HANDS_ON,https://www.estoesunlink.com,false,lecturer-01
+lecture-13,W,En esta clase impartiremos el tema 6,2022/06/11 10:00,2022/06/11 12:00,Fundamentos de evasion de impuestos,THEORETICAL,https://www.estoesunlink.com,false,lecturer-01
+lecture-14,これはタイトルです。やあやあ,このクラスでは、トピック 3 を教えます。,2022/06/11 10:00,2022/06/11 12:00,Introducción a la termidonamica tubular.,THEORETICAL,,false,lecturer-01
+lecture-15,κρύο,Σε αυτό το μάθημα θα διδάξουμε το θέμα 5,2022/06/11 10:00,2022/06/11 12:00,Fundamentos de evasion de impuestos,THEORETICAL,,false,lecturer-01
+lecture-16,Una cadena de setenta y cuatro caracteres como título,En esta clase impartiremos el tema 7,2022/06/11 10:00,2022/06/11 12:00,Fundamentos de evasion de impuestos,HANDS_ON,https://www.estoesunlink.com,true,lecturer-01
+lecture-17,Web Development with HTML and CSS,En esta clase impartiremos el tema 4,2022/06/11 10:00,2022/06/11 12:00,Matematicas indiscretas,HANDS_ON,https://www.estoesunlink.com,false,lecturer-01
+lecture-18,Titulo4,En esta clase impartiremos el tema 9,2022/06/11 10:00,2022/06/11 12:00,Filosofia kantiana,THEORETICAL,https://www.estoesunlink.com,false,lecturer-01
+lecture-19,इति उपाधिः । नमस्कार नमस्कार,नमस्कार वर्ग। अद्य वयं विषयं ४ पाठयिष्यामः,2022/03/17 12:00,2022/03/18 01:00,Fundamentos de evasion de impuestos,THEORETICAL,,false,lecturer-01
+lecture-20,<h1>Hola mundo</h1>,En esta clase impartiremos el tema 10,2022/03/17 12:00,2022/03/18 02:00,Problemas sobre educación física teórica,HANDS_ON,https://www.estoesunlink.com,true,lecturer-01
+lecture-21,<script>alert('Javascript');</script>,En esta clase impartiremos el tema 6,2022/03/17 12:00,2022/03/18 03:00,Falsificación de documentos,THEORETICAL,https://www.estoesunlink.com,true,lecturer-02
+lecture-22,Esta cadena de  50 caracteres funciona como titulo,नमस्कार वर्ग। अद्य वयं विषयं ४ पाठयिष्यामः,2022/03/17 12:00,2022/03/18 04:00,Fundamentos de evasion de impuestos,THEORETICAL,https://www.estoesunlink.com,true,lecturer-02
+lecture-23,Esta cadena de  50 caracteres funciona como titulo,En esta clase impartiremos una clase de repaso,2022/01/02 09:00,2022/01/02 11:00,Introducción a la termidonamica tubular.,THEORETICAL,,true,lecturer-02
+lecture-24,"""Titulo""",En esta clase impartiremos el tema 12,2022/06/05 06:00,2022/06/05 08:00,Revisión de examenes,THEORETICAL,https://www.estoesunlink.com,false,lecturer-02
+lecture-25,{Insertar_titulo},En esta clase impartiremos el tema 5,2022/01/04 09:00,2022/01/04 11:00,Programacion afectiva,HANDS_ON,https://www.estoesunlink.com,false,lecturer-02
+lecture-26,Titulo5,~@@#¬~~¬¬¬,2022/01/05 09:00,2022/01/05 11:00,Fundamentos de evasion de impuestos,HANDS_ON,,true,lecturer-02
+lecture-27,^titulo^,☺	☻	♥	♦	♣	♠	•	◘	○,2022/01/05 09:00,2022/01/05 11:00,Introducción a la termidonamica tubular.,HANDS_ON,https://www.estoesunlink.com,false,lecturer-02
+lecture-28,κρύο,En esta clase impartiremos el tema 5,2022/03/17 12:00,2022/03/18 05:00,Programacion afectiva II,THEORETICAL,https://www.estoesunlink.com,false,lecturer-02

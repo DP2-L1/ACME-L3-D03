@@ -1,4 +1,4 @@
-key,title,sessionAbstract,timePeriodStart,optionalLink,key:practicum,timePeriodEnd
-practicumsession-02,introducción a SQL Queries,curso autodidacta de programacion en sql,2023/04/17 12:30,null,practicum-02,2023/04/30 12:30
-practicumsession-03,sesión de introducción a catar jamones,en esta sesión se pretende que nuestros alumnos sepan como sabe un buen jamon,2023/05/03 08:30,https://www.jamones.pro/badia-sevilla/,practicum-03,2023/05/23 09:00
-practicumsession-01,sesion de lenguaje corporal,en este curso obtendras una gran experiencia en el campo del back testing,2023/03/27 01:30,https://es.indeed.com/jobs?q=Pr%C3%A1cticas+backend+web+developer&from=mobRdr&utm_source=%2Fm%2F&utm_medium=redir&utm_campaign=dt&vjk=e541177e3d9ee4f9,practicum-01,2023/04/04  01:30
+key,title,sessionAbstract,timePeriodStart,optionalLink,key:practicum,timePeriodEnd,isAddendum
+practicumsession-02,introducción a SQL Queries,curso autodidacta de programacion en sql,2023/04/17 12:30,null,practicum-02,2023/04/30 12:30,false
+practicumsession-03,sesión de introducción a catar jamones,en esta sesión se pretende que nuestros alumnos sepan como sabe un buen jamon,2023/05/03 08:30,https://www.jamones.pro/badia-sevilla/,practicum-03,2023/05/23 09:00,false
+practicumsession-01,sesion de lenguaje corporal,en este curso obtendras una gran experiencia en el campo del back testing,2023/03/27 01:30,https://es.indeed.com/jobs?q=Pr%C3%A1cticas+backend+web+developer&from=mobRdr&utm_source=%2Fm%2F&utm_medium=redir&utm_campaign=dt&vjk=e541177e3d9ee4f9,practicum-01,2023/04/04  01:30,false

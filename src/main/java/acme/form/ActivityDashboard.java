@@ -2,7 +2,11 @@
 package acme.form;
 
 import acme.framework.data.AbstractForm;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 public class ActivityDashboard extends AbstractForm {
 
 	/**
